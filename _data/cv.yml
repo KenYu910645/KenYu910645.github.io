@@ -2,38 +2,48 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: Ken, Jia-Quan Yu
     - name: Date of Birth
-      value: 14th March 1879
+      value: 27th August 1995
     - name: Languages
-      value: English, German
+      value: English, Mandarin
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Master of Science, Communication Engineering
+      institution: National Taiwan University, Taipei, Taiwan
+      year: 2023
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
+        - title: Thesis Title
+          contents: Image Recognition in Driving Scene Monocular 3D Object Detection and Image Segmentation
+        - title: Selected Courses
           contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+            - Machine Learning
+            - Deep Learning in Computer Vision
+            - Digital Visual Effects
+        - title: Overall GPA
+          contents:
+          - 4.23/4.3
+    - title: Bachelor of Science, Mechanical Engineering
+      institution: National Taiwan University, Taipei, Taiwan
+      year: 2017
       description:
-        - Description 1.
-        - Description 2.
+        - title: Selected Courses
+          contents: 
+            - Computer Programming
+            - Program Design
+            - Automatic Machine Design
+        - title: Selected Courses GPA
+          contents:
+          - 3.87/4.3
 
-- title: Experience
+- title: Research Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Master Degree Student
+      institution: Digital Image Processing Lab, National Taiwan University
+      year: 2021 - 2023
       description:
         - Description 1.
         - Description 2.
