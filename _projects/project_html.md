@@ -1,12 +1,11 @@
 ---
 layout: page
-title: HTML
-description: churn rate ananlyse
-img: assets/img/7.jpg
+title: Machine Learning
+description: Churn Rate Ananlyse
+img: assets/img/preview/html.png
 importance: 4
 category: Courses
 ---
-
 
 [Visit My GitHub Repository](https://github.com/KenYu910645/HTML2021FALL.git)
 

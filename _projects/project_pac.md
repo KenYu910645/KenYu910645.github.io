@@ -2,20 +2,62 @@
 layout: page
 title: Perspective-aware Convolution
 description: Monocular 3D Object Detection 
-img: assets/img/pac_project.jpg
+img: assets/img/preview/pac_project.jpg
 importance: 2
 category: Research
 giscus_comments: true
 related_publications: pac
 ---
 
-[Visit My GitHub Repository](https://github.com/KenYu910645/perspective-aware-convolution)
+[GitHub Repository](https://github.com/KenYu910645/perspective-aware-convolution)
 
 <div class="row">
     <div class="col-sm-12">
         {% include video.html path="https://www.youtube.com/embed/AVMtxJy7pjk" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/project_pac/intro.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/project_pac/explain.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/project_pac/literature.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/project_pac/pac_explain.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/project_pac/aspp.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/project_pac/network.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/project_pac/result.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+<div class="col-sm mt-3 mt-md-0">
+    {% include figure.html path="assets/img/project_pac/dialate_rate.png" title="example image" class="img-fluid rounded z-depth-1" %}
+</div>
+
+
 The input data of the 3D object detector ONLY need image and camera intrinsic parameters, no lidar or radar data required.
 Our work only use single frame as input. 
 The bird-eye-view is shown on the right hand side.

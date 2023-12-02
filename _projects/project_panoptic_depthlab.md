@@ -2,7 +2,7 @@
 layout: page
 title: Panoptic-DepthLab
 description: Combination of Panoptic Segmentation and Depth Estimation
-img: assets/img/panoptic_depthlab.jpg
+img: assets/img/preview/panoptic_depthlab_project.jpg
 importance: 1
 category: Research
 related_publications: panoptic_seg
@@ -10,6 +10,73 @@ related_publications: panoptic_seg
 
 [Visit My GitHub Repository](https://github.com/KenYu910645/detectron2/tree/main/projects/Panoptic-DepthLab)
 
+
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/project_panoptic_depthlab/intro.jpg" title="Intro image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    This image can also have a caption. It's like magic.
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/project_panoptic_depthlab/deeplab.jpg" title="Intro image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    This image can also have a caption. It's like magic.
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/project_panoptic_depthlab/depthlab.jpg" title="Intro image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    This image can also have a caption. It's like magic.
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/project_panoptic_depthlab/pq_eqa.jpg" title="Intro image" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/project_panoptic_depthlab/pq_result.jpg" title="Intro image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    This image can also have a caption. It's like magic.
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/project_panoptic_depthlab/exp1.jpg" title="Intro image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    This image can also have a caption. It's like magic.
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/project_panoptic_depthlab/exp2.jpg" title="Intro image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    This image can also have a caption. It's like magic.
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/project_panoptic_depthlab/exp3.jpg" title="Intro image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    This image can also have a caption. It's like magic.
+</div>
 
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.

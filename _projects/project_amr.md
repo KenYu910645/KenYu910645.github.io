@@ -1,14 +1,13 @@
 ---
 layout: page
 title: Autonomous Mobile Vehicle
-description: Autonomous Mobile Vehicle for luggage carrying in Hotel 
-img: assets/img/pac_project.jpg
+description: A luggage carrying robot in hotel 
+img: assets/img/preview/amr.png
 importance: 3
 category: Work
 ---
 
 [Visit My GitHub Repository](https://github.com/KenYu910645/lucky_navi)
-
 
 [Visit My GitHub Repository](https://github.com/KenYu910645/elevator_gateway)
 
