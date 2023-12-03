@@ -9,7 +9,29 @@ giscus_comments: true
 related_publications: pac
 ---
 
-[GitHub Repository](https://github.com/KenYu910645/perspective-aware-convolution)
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0 text-center">
+        <div class="icon-with-text">
+            <a href="{{ 'CVGIP_pac_paper.pdf' | prepend: 'assets/pdf/' | relative_url}}" target="_blank" rel="noopener noreferrer">
+            <span class="icon-text">Paper</span>
+            <i class="fa-solid fa-file-pdf large-icon"></i></a>
+        </div>
+    </div>
+    <div class="col-sm mt-3 mt-md-0 text-center">
+        <div class="icon-with-text">
+            <a href="{{ 'CVGIP_pac_ppt.pdf' | prepend: 'assets/pdf/' | relative_url}}" target="_blank" rel="noopener noreferrer">
+            <span class="icon-text">Slides</span>
+            <i class="fa-solid fa-file-pdf large-icon"></i></a>
+        </div>
+    </div>
+    <div class="col-sm mt-3 mt-md-0 text-center">
+        <div class="icon-with-text">
+            <a href="https://github.com/KenYu910645/perspective-aware-convolution" target="_blank" rel="noopener noreferrer">
+            <span class="icon-text">GitHub</span>
+            <i class="fa-brands fa-github large-icon"></i></a>
+        </div>
+    </div>
+</div>
 
 <div class="row">
     <div class="col-sm-12">

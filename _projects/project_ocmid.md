@@ -3,7 +3,7 @@ layout: page
 title: OCMID
 description: Multi-robot Transportation System
 img: assets/img/preview/ocmid.png
-redirect: https://unsplash.com
+# redirect: https://unsplash.com
 importance: 3
 category: Work
 ---
