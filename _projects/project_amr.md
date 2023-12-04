@@ -13,11 +13,15 @@ category: Work
 
 It does also support embedding videos from different sources. Here are some examples:
 
-<div class="row">
+
+{% include video.html path="https://www.youtube.com/embed/QkCkt8oi4F0" class="img-fluid rounded z-depth-1" width="800px" height="10px" %}
+
+<!-- <div class="row">
     <div class="col-sm-12">
-        {% include video.html path="https://www.youtube.com/embed/QkCkt8oi4F0" class="img-fluid rounded z-depth-1" width=800px height=600px %}
+
+
     </div>
-</div>
+</div> -->
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
