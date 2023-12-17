@@ -7,7 +7,17 @@ importance: 4
 category: Courses
 ---
 
-[Visit My GitHub Repository](https://github.com/KenYu910645/HTML2021FALL.git)
+<!-- hyperlink icon  -->
+<div class="row">
+    <!-- github icon -->
+    <div class="col-sm mt-3 mt-md-0 text-center">
+        <div class="icon-with-text">
+            <a href="https://github.com/KenYu910645/HTML2021FALL.git" target="_blank" rel="noopener noreferrer">
+            <span class="icon-text h3">GitHub</span>
+            <i class="fa-brands fa-github h3"></i></a>
+        </div>
+    </div>
+</div>
 
 
 Every project has a beautiful feature showcase page.

@@ -7,7 +7,17 @@ importance: 4
 category: Fun
 ---
 
-[Visit My GitHub Repository](https://github.com/KenYu910645/auto_checker)
+<!-- hyperlink icon  -->
+<div class="row">
+    <!-- github icon -->
+    <div class="col-sm mt-3 mt-md-0 text-center">
+        <div class="icon-with-text">
+            <a href="https://github.com/KenYu910645/auto_checker" target="_blank" rel="noopener noreferrer">
+            <span class="icon-text h3">GitHub</span>
+            <i class="fa-brands fa-github h3"></i></a>
+        </div>
+    </div>
+</div>
 
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.

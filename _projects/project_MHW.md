@@ -7,16 +7,29 @@ importance: 4
 category: Fun
 ---
 
-[Visit My GitHub Repository](https://github.com/KenYu910645/mhw_cv.git)
-
+<!-- hyperlink icon  -->
 <div class="row">
-    <div class="col-sm-12">
-        {% include video.html path="https://www.youtube.com/embed/mlXAL1KmFfM" class="img-fluid rounded z-depth-1" %}
+    <!-- github icon -->
+    <div class="col-sm mt-3 mt-md-0 text-center">
+        <div class="icon-with-text">
+            <a href="https://github.com/KenYu910645/mhw_cv.git" target="_blank" rel="noopener noreferrer">
+            <span class="icon-text h3">GitHub</span>
+            <i class="fa-brands fa-github h3"></i></a>
+        </div>
     </div>
 </div>
-<div class="row">
+
+<!-- youtube video  -->
+<div class="row justify-content-sm-center">
     <div class="col-sm-12">
-        {% include video.html path="https://www.youtube.com/embed/eh3yJc0sMIY" class="img-fluid rounded z-depth-1" %}
+        {% include video.html path="https://www.youtube.com/embed/mlXAL1KmFfM" width="770px" height="530px" %}
+    </div>
+</div>
+
+<!-- youtube video  -->
+<div class="row justify-content-sm-center">
+    <div class="col-sm-12">
+        {% include video.html path="https://www.youtube.com/embed/eh3yJc0sMIY" width="770px" height="530px" %}
     </div>
 </div>
 
