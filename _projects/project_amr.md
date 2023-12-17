@@ -25,8 +25,77 @@ category: Work
     </div>
 </div>
 <div class="caption">
-    AMR navigate autonomously in hotel
+    AMR navigate autonomously in Shanghai CitiGo hotel
 </div>
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-12">
+        {% include video.html path="https://www.youtube.com/embed/8xDUsTweNg0" width="770px" height="530px" %}
+    </div>
+</div>
+<div class="caption">
+    AMR navigate autonomously in Hangzhou CitiGo hotel
+</div>
+
+## Introduction
+We have developed an autonomous vehicle specifically designed for luggage transportation in hotels. This robot's primary task is to carry guests' luggage to their designated hotel rooms upon check-in.
+
+To navigate safely and autonomously through the 8-floor hotel environment, it must dynamically avoid obstacles and reroute as necessary. Additionally, it is capable of operating elevators, ensuring safely enter and exit the elevator.
+
+Our Autonomous Mobile Robot (AMR) is equipped with two 2D LiDAR sensors, positioned at the front and back, to provide a 360-degree view of nearby obstacles. It also features a rear-facing camera and a top-view camera, which are used to detect AprilTag localization landmarks that we pre-installed in the hotel.
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.html path="assets/img/project_amr/amr_room.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    The luggage-carrying AMR operated in hotel
+</div>
+
+## Localization Approach
+
+To accurately localize the robot within the hotel, we utilize an algorithm based on LiDAR data, known as Adaptive Monte Carlo Localization (AMCL). This robust method compares LiDAR data against the hotel's map to determine the robot's most probable location. Essentially, it's a particle filter approach, considering multiple potential robot locations simultaneously. The estimated robot location is then derived as the mean of all these 'particle' hypotheses.
+
+However, relying solely on 2D LiDAR data for localization in complex environments like our hotel can be challenging. The robot occasionally loses its bearings in long corridors, where the algorithm struggles to converge due to indistinct environmental features.
+
+To address this, we've placed fiducial markers in critical areas, particularly where the robot tends to lose localization. These markers are detected by the robot's top-view and rear-view cameras, serving as auxiliary aids in maintaining localization throughout its journey.
+
+Overall, our robot's localization strategy combines two methods: LiDAR-based positioning, which identifies the most likely location by comparing data with the hotel map, and camera-based localization, using fiducial markers to assist the robot in challenging environments.
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.html path="assets/img/project_amr/amr_map.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Our robot lacks an automatic mapping algorithm, meaning the map it uses must be manually created. Engineers convert 2D building blueprints into a digital map format for the robot's navigation.
+</div>
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.html path="assets/img/project_amr/amr_software.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Screenshot showcasing the robot's localization in action. The green rectangle indicates the robot's position, while the blue dots represent 2D LiDAR points from the rear LiDAR, and the red dots from the front LiDAR. Currently, the robot is navigating a narrow corridor, utilizing LiDAR data to detect nearby obstacles and plan a safe, collision-free path.
+</div>
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.html path="assets/img/project_amr/marker.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Markers that we installed on the roof of the hotel
+</div>
+
+
+## Navigation 
+
+Our navigation algorithm comprises two levels of control: global planners and local planners. The global planner designs a static path from the starting point to the goal, outlining a general route for the robot. However, due to dynamic obstacles like people and cleaning carts encountered during navigation, a more flexible approach is needed. This is where the local planner comes in. It considers LiDAR data to dynamically avoid obstacles in real-time while adhering to the global path.
+
+For the global planner, we employ an A* algorithm, akin to Dijkstra's but with added heuristic evaluation for improved efficiency. The local planner uses two algorithms: the Dynamic Window Approach (DWA) and a Full State Controller. DWA simulates and evaluates various speed and control commands based on safety, kinematic information, and collision risk. However, DWA alone is insufficient for precise maneuvers such as entering and exiting elevators. For these scenarios, we use the Full State Controller, a goal-pursuing motor controller, ensuring safe and accurate elevator navigation.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-6 mt-3 mt-md-0">
@@ -37,7 +106,7 @@ category: Work
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    The main difference between Dijkstra's and the A* algorithm lies in their approach. While similar in structure, the A* algorithm incorporates heuristic evaluation. This heuristic assesses the estimated direct distance from a given location to the goal. Consequently, A* tends to prioritize paths that appear closer to the goal, enabling it to find a route more quickly. This heuristic approach often allows A* to identify an optimal path faster than Dijkstra's algorithm, which doesn't use such a heuristic.
 </div>
 
 <div class="row justify-content-sm-center">
@@ -49,78 +118,5 @@ category: Work
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    Dijkstra's and the A* algorithm
 </div>
-
-
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
-
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
