@@ -45,14 +45,18 @@
       institution: Digital Image Processing Lab, National Taiwan University, Taipei, Taiwan
       year: 2021 - 2023
       description:
-          - Monocular 3D Object Detection
-          - Developed a convolutional module that guides the neural network to exploit visual clues like road landmarks to assess objects distance to the camera. This innovation yielded a +1.4% improvement in average precision (AP)
-          - Segmentation plus Depth
-          - Combined panoptic segmentation and depth estimation into a unified, end-to-end network architecture. Visualized segments depth with color map to enhance autonomous driving safety
-          - Scene-aware Data Augmentation
-          - Integrated segmented objects into different scenes to reuse their training labels. Used depth maps as references to ensure realistic object label generation, resulting in +2.35% in AP
-          - Safety Metric for Object Detection
-          - Calculated weights to on-road objects based on their relevance to driving safety. Utilized the weighted average precision to better evaluate performance of object detection algorithms
+        - title: Monocular 3D Object Detection
+          contents:
+            - Developed a convolutional module that guides the neural network to exploit visual clues like road landmarks to assess objects distance to the camera. This innovation yielded a +1.4% improvement in average precision (AP)
+        - title: Segmentation plus Depth
+          contents:
+            - Combined panoptic segmentation and depth estimation into a unified, end-to-end network architecture. Visualized segments depth with color map to enhance autonomous driving safety
+        - title: Scene-aware Data Augmentation
+          contents:
+            - Integrated segmented objects into different scenes to reuse their training labels. Used depth maps as references to ensure realistic object label generation, resulting in +2.35% in AP
+        - title: Safety Metric for Object Detection
+          contents:
+            - Calculated weights to on-road objects based on their relevance to driving safety. Utilized the weighted average precision to better evaluate performance of object detection algorithms
 
     - title: Research Assistant
       institution: System Optimization Lab, National Taiwan University, Taipei, Taiwan

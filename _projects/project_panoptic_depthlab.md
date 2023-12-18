@@ -70,7 +70,7 @@ To unify the outcomes of segmentation and depth estimation, we map corresponding
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    Panoptic-DepthLab Network Architecture 
 </div>
 
 <div class="row">

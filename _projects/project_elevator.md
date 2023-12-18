@@ -2,7 +2,7 @@
 layout: page
 title: Elevator Gateway
 description: Elevator Control System
-img: assets/img/project_elevator/elevator_well.jpg
+img: assets/img/preview/elevator_well.jpg
 importance: 4
 category: Work
 ---

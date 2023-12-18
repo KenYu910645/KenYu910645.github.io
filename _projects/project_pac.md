@@ -105,11 +105,13 @@ To achieve this, we propose a novel approach: skewing the convolutional kernel i
 
 We have developed a technique to skew the kernel shape based on the perspective information of the image. A key question we addressed is determining the size of the kernel. To this end, we conducted experiments with various dilation rates to evaluate their impact on 3D object detection performance. Our findings indicate that dilation rates ranging from three to seven generally yield the best results. This experiment is shown below.
 
-<div class="col-sm mt-3 mt-md-0">
-    {% include figure.html path="assets/img/project_pac/dialate_rate.png" title="example image" class="img-fluid rounded z-depth-1" %}
-</div>
-<div class="caption">
-    Our experiment shows dialation rate with 3, 5, and 7 yield a better result in 3D object detection.
+<div class="text-center">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/project_pac/dialate_rate.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="caption">
+        Our experiment shows dialation rate with 3, 5, and 7 yield a better result in 3D object detection.
+    </div>
 </div>
 
 Building on this, we designed a 'Perspective-Aware Convolution' module, closely resembling the Atrous Spatial Pyramid Pooling (ASPP) module. This module utilizes multiple dilation rates for the kernel size, with each kernel's shape being adjusted to align with the slope of the depth axis, as depicted in the illustration below.
