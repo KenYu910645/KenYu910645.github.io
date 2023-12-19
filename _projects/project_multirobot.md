@@ -1,15 +1,14 @@
 ---
 layout: page
-title: Multi-robot Transportation System
-description: Multi-robot Transportation System
+title: Multi-robot Collaboration
+description: Factory Autonomous Transportation System
 img: assets/img/preview/ocmid.png
-# redirect: https://unsplash.com
 importance: 3
 category: Work
 ---
 
 <!-- hyperlink icon  -->
-<div class="row">
+<div class="row" style="margin-bottom: 20px;">
     <!-- github icon -->
     <div class="col-sm mt-3 mt-md-0 text-center">
         <div class="icon-with-text">
@@ -31,13 +30,12 @@ category: Work
 
 ## Motivation
 
-Modern factories have an increasing need for efficient transportation of products between different production lines. Traditionally, this task falls to workers, often proving to be cumbersome and labor-intensive. To foster smart factory environments and reduce manual labor, one viable solution is the utilization of autonomous mobile vehicles. These vehicles are tasked with transporting heavy loads, sometimes exceeding 100 kilograms, which can be challenging for human workers. Our goal is to develop an autonomous mobile vehicle capable of safely and effectively navigating factory settings while handling such substantial weights."
+Modern factories have an increasing need for efficient transportation of products between different production lines. Traditionally, this task falls to workers, often proving to be cumbersome and labor-intensive. To foster smart factory environments and reduce manual labor, one viable solution is the utilization of autonomous mobile vehicles. Our goal is to develop an autonomous mobile vehicle capable of safely and effectively navigating factory settings while handling such substantial weights.
 
-How can we construct an Autonomous Mobile Robot (AMR) that is capable of carrying heavy loads while overcoming navigation challenges and flexibility constraints? Large robots often present difficulties in scheduling and maneuverability. To address this, we propose a novel multi-agent transportation system. In this system, each AMR can carry up to 60 kilograms individually, but when combined, they can transport loads of up to 120 kilograms. The key is to develop a system where separated robots can cooperate and move as a unified entity towards a common goal. Additionally, it is crucial for these AMRs to effectively localize themselves within the factory environment to ensure smooth operation and precise navigation.
+However, large robots often present difficulties in scheduling and maneuverability in factor setting. To address this, we propose a novel multi-agent transportation system. In our proposed system, each AMR can carry up to 60 kilograms individually, but when combined, they can transport loads of up to 120 kilograms. The key is to develop a system where separated robots can cooperate and move as a unified entity towards a common goal.
 
 ## Hardware
-
-Our individual Autonomous Mobile Robot (AMR) is outfitted with two 2D Lidars, one positioned at the front and the other at the rear. It also features a ZED 2 2D stereo camera at the front. The computational platform includes an NVIDIA Nano, tasked with processing all image data from the ZED 2 camera, and a Raspberry Pi for handling other algorithms. The AMR is powered by two brushed motors with encoders, providing precise information on wheel movement. It operates on a 29-volt battery system, enabling continuous operation for approximately 30 minutes. Additionally, the AMR is equipped with an engagement mechanism on top, utilized for attaching to and transporting loads by combining forces with other units in the system.
+Our individual Autonomous Mobile Robot (AMR) is outfitted with two 2D Lidars, one positioned at the front and the other at the rear. It also features a ZED 2 2D stereo camera at the front. The computational platform includes an NVIDIA Nano, tasked with image processing, and a Raspberry Pi 4 for handling all other algorithms. The AMR is powered by two brushed motors with encoders, providing precise wheel movement information. It operates on a 29-volt battery, enabling continuous operation for approximately 30 minutes. Additionally, the AMR is equipped with an engagement mechanism on top, utilized for attaching and dettaching to loads shelf.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -48,7 +46,7 @@ Our individual Autonomous Mobile Robot (AMR) is outfitted with two 2D Lidars, on
     AMR Hardwares
 </div>
 
-Our loading platform is constructed using sturdy aluminum structures. At the center of the shelf, there is an engagement pin designed to connect with one of the AMRs. The front of the shelf features several fiducial markers, which are essential for recognizing and localizing the shelf during the AMR's operation.
+Our loading platform is constructed using sturdy aluminum structures. At the center of the shelf, there is an engagement pin designed to engage with one of the AMRs. The front of the shelf is pasted with fiducial marker, which is essential for recognizing and localizing the shelf during the AMR's operation.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -56,16 +54,16 @@ Our loading platform is constructed using sturdy aluminum structures. At the cen
     </div>
 </div>
 <div class="caption">
-    Load shelf. It's used to carry heavy loads.
+    Load shelf
 </div>
 
 ## Software
 
-Our software architecture is structured as follows: The Nvidia Jetson Nano is tasked with processing the dual camera images. We use ORB-SLAM2 as our primary visual-based SLAM algorithm to build maps while the robot scans the environment. Additionally, we leverage the ZED camera's built-in visual-inertial odometry for accurate estimations of the robot's kinematic information. To enhance localization, especially in cases of losing orientation, we use AprilTags (fiducial markers).
+Our software architecture is structured as follows: The Nvidia Jetson Nano is tasked with processing the dual camera images. We use RTABMAP as our visual-based SLAM algorithm to build maps while the robot scans the environment. Additionally, we leverage the ZED camera's built-in visual-inertial odometry for accurate estimations of the robot's kinematic information. To recongize load shelf, we use AprilTags (fiducial markers).
 
-Live data from the ZED camera and the Nvidia Jetson Nano is transmitted to the Raspberry Pi via Ethernet. The Raspberry Pi is crucial for processing LIDAR data, which is vital for real-time obstacle avoidance. It also runs navigation algorithms, including A* and the Dynamic Window Approach, to determine optimal navigation commands. These commands are then relayed to our motor control board, the STM32F446RE.
+Live data from the ZED camera and the Nvidia Jetson Nano is transmitted to the Raspberry Pi via Ethernet. The Raspberry Pi is crucial for processing LIDAR data, which is vital for real-time obstacle avoidance. It also runs navigation algorithms, including A* and the Dynamic Window Approach, to determine optimal navigation commands. These commands are then relayed to our motor control board, the STM32-F446RE.
 
-Additionally, we utilize SMACH as our task manager, which communicates with our server through Wi-Fi for wireless data transmission.
+Additionally, we utilize SMACH as our task manager, which communicates with our server through Wi-Fi.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">

@@ -8,7 +8,7 @@ category: Fun
 ---
 
 <!-- hyperlink icon  -->
-<div class="row">
+<div class="row" style="margin-bottom: 20px;">
     <!-- github icon -->
     <div class="col-sm mt-3 mt-md-0 text-center">
         <div class="icon-with-text">

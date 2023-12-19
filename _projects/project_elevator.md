@@ -1,14 +1,14 @@
 ---
 layout: page
-title: Elevator Gateway
-description: Elevator Control System
+title: Elevator Control System
+description: let robot control elevator 
 img: assets/img/preview/elevator_well.jpg
 importance: 4
 category: Work
 ---
 
 <!-- hyperlink icon  -->
-<div class="row">
+<div class="row" style="margin-bottom: 20px;">
     <!-- github icon -->
     <div class="col-sm mt-3 mt-md-0 text-center">
         <div class="icon-with-text">
@@ -26,35 +26,31 @@ category: Work
     </div>
 </div>
 <div class="caption">
-    I created a elevator simulation program to test our elevator controller
+    Elevator simulation program for testing our elevator controller
 </div>
-
 
 ## Introduction
 
-To enable the autonomous vehicle to navigate between different floors in the hotel, we developed an elevator control system. This system is designed to respond to the robot's commands, managing tasks such as opening and closing doors and pressing the floor buttons as needed.
-
+To enable the autonomous robot to travel between different hotel floors, we developed an elevator control system. This system is designed to respond to the robot's commands, managing tasks such as opening and closing elevators doors and pressing the floor buttons as needed.
 
 ## Approach
-To facilitate this integration, we added two hardware components to the elevator system, avoiding major modifications to its existing control mechanism. 
+We installed two hardware components to the elevator system, avoiding major modifications to its existing elevator control system.
 
-The first is a button control board installed within the elevator. This board can detect the status of each button and press them as needed. The second component is a wireless receiver for the robot's commands, which can connect via Bluetooth or Wi-Fi. 
-
-For this, we installed an elevator service server, using a Raspberry Pi, on top of the elevator. These two hardware additions enable us to remotely control the elevator in response to the robot's requirements.
+The first hardware is a button control board installed within the elevator. This board can detect the status of each button and press them as needed. The second hardware is the elevator server which can receive robots commands via Bluetooth or Wi-Fi. 
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/project_elevator/relationship.jpg" title="Elevator Gateway Testing Program" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm mt-3 mt-md-0 text-center">
+        {% include figure.html path="assets/img/project_elevator/relationship.jpg" title="Elevator Gateway Testing Program" class="img-fluid rounded z-depth-1" width="400" %}
     </div>
 </div>
 <div class="caption">
-    The relationship between our Elevator Server and the elevator itself allows our robot to call the elevator using wireless communication. The Elevator Server can control the elevator buttons. Notably, it is equipped with the capability to detect if there are people inside the elevator, thus preventing the robot from entering an already crowded elevator.
+    The relationship between our elevator server and the elevator itself allows our robot to call the elevator using wireless communication. The button control board can control the elevator buttons. Notably, it is equipped with the capability to detect if there are people inside the elevator, thus preventing the robot from entering an already crowded elevator.
 </div>
 
 ## Installation
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/project_elevator/elevator_control_board.jpg" title="Elevator Gateway Testing Program" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm mt-3 mt-md-0 text-center">
+        {% include figure.html path="assets/img/project_elevator/elevator_control_board.jpg" title="Elevator Gateway Testing Program" class="img-fluid rounded z-depth-1" width="400"%}
     </div>
 </div>
 <div class="caption">
@@ -72,7 +68,7 @@ For this, we installed an elevator service server, using a Raspberry Pi, on top 
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/project_elevator/elevator_well.jpg" title="Elevator Gateway Testing Program" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/preview/elevator_well.jpg" title="Elevator Gateway Testing Program" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">

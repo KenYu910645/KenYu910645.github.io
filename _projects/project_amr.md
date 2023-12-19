@@ -1,14 +1,14 @@
 ---
 layout: page
-title: Autonomous Mobile Vehicle
-description: A luggage carrying robot in hotel 
+title: Luggage Carrying Robot 
+description: Autonomous Mobile Vehicle
 img: assets/img/preview/amr.png
 importance: 3
 category: Work
 ---
 
 <!-- hyperlink icon  -->
-<div class="row">
+<div class="row" style="margin-bottom: 20px;">
     <!-- github icon -->
     <div class="col-sm mt-3 mt-md-0 text-center">
         <div class="icon-with-text">
@@ -54,15 +54,13 @@ Our Autonomous Mobile Robot (AMR) is equipped with two 2D LiDAR sensors, positio
     The luggage-carrying AMR operated in hotel
 </div>
 
-## Localization Approach
+## Approach - Robot Localization 
 
-To accurately localize the robot within the hotel, we utilize an algorithm based on LiDAR data, known as Adaptive Monte Carlo Localization (AMCL). This robust method compares LiDAR data against the hotel's map to determine the robot's most probable location. Essentially, it's a particle filter approach, considering multiple potential robot locations simultaneously. The estimated robot location is then derived as the mean of all these 'particle' hypotheses.
+To accurately localize the robot within the hotel, we utilize an algorithm based on LiDAR data, known as Adaptive Monte Carlo Localization (AMCL). This robust method compares LiDAR data against the hotel's map to determine the robot's most probable location. Essentially, it is based on particle filter, which consider multiple potential robot locations simultaneously. The estimated robot location is then derived as the mean of all these 'particle' hypotheses.
 
-However, relying solely on 2D LiDAR data for localization in complex environments like our hotel can be challenging. The robot occasionally loses its bearings in long corridors, where the algorithm struggles to converge due to indistinct environmental features.
+However, relying solely on 2D LiDAR data for localization in complex environments can be challenging. The robot occasionally loses its bearings in long corridors, where the algorithm struggles to converge due to indistinct environmental features.
 
-To address this, we've placed fiducial markers in critical areas, particularly where the robot tends to lose localization. These markers are detected by the robot's top-view and rear-view cameras, serving as auxiliary aids in maintaining localization throughout its journey.
-
-Overall, our robot's localization strategy combines two methods: LiDAR-based positioning, which identifies the most likely location by comparing data with the hotel map, and camera-based localization, using fiducial markers to assist the robot in challenging environments.
+To address this issue, we've placed fiducial markers in hotel. These markers are detected by the robot's top-view and rear-view cameras, serving as auxiliary aids in maintaining localization throughout its mission.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-6 mt-3 mt-md-0">
@@ -70,7 +68,7 @@ Overall, our robot's localization strategy combines two methods: LiDAR-based pos
     </div>
 </div>
 <div class="caption">
-    Our robot lacks an automatic mapping algorithm, meaning the map it uses must be manually created. Engineers convert 2D building blueprints into a digital map format for the robot's navigation.
+    The map of the hotel is manually created. Engineers need to convert 2D building blueprints into a digital map format for the robot's navigation and localization.
 </div>
 
 <div class="row justify-content-sm-center">
@@ -79,7 +77,7 @@ Overall, our robot's localization strategy combines two methods: LiDAR-based pos
     </div>
 </div>
 <div class="caption">
-    Screenshot showcasing the robot's localization in action. The green rectangle indicates the robot's position, while the blue dots represent 2D LiDAR points from the rear LiDAR, and the red dots from the front LiDAR. Currently, the robot is navigating a narrow corridor, utilizing LiDAR data to detect nearby obstacles and plan a safe, collision-free path.
+    Screenshot showcasing the robot's localization in action. The green rectangle indicates the robot's position, while the blue dots represent 2D LiDAR points from the rear LiDAR, and the red dots from the front LiDAR. Currently, the robot is in front of a T-section.
 </div>
 
 <div class="row justify-content-sm-center">
@@ -88,15 +86,15 @@ Overall, our robot's localization strategy combines two methods: LiDAR-based pos
     </div>
 </div>
 <div class="caption">
-    Markers that we installed on the roof of the hotel
+    Fiducial markers we installed on the roof of the hotel
 </div>
 
 
-## Navigation 
+## Approach - Robot Navigation 
 
-Our navigation algorithm comprises two levels of control: global planners and local planners. The global planner designs a static path from the starting point to the goal, outlining a general route for the robot. However, due to dynamic obstacles like people and cleaning carts encountered during navigation, a more flexible approach is needed. This is where the local planner comes in. It considers LiDAR data to dynamically avoid obstacles in real-time while adhering to the global path.
+Our navigation algorithm comprises two levels of control: global planners and local planners. The global planner designs a static path from current position to the goal, outlining a general route for the robot. However, due to dynamic obstacles encountered during navigation, a more flexible approach is needed. This is where the local planner comes in. It considers LiDAR data to dynamically avoid obstacles in real-time while adhering to the global path.
 
-For the global planner, we employ an A* algorithm, akin to Dijkstra's but with added heuristic evaluation for improved efficiency. The local planner uses two algorithms: the Dynamic Window Approach (DWA) and a Full State Controller. DWA simulates and evaluates various speed and control commands based on safety, kinematic information, and collision risk. However, DWA alone is insufficient for precise maneuvers such as entering and exiting elevators. For these scenarios, we use the Full State Controller, a goal-pursuing motor controller, ensuring safe and accurate elevator navigation.
+For the global planner, we employ an A* algorithm, akin to Dijkstra's but with added heuristic evaluation for improved efficiency. The local planner uses two algorithms: the Dynamic Window Approach (DWA) and a Full State Controller. DWA simulates and evaluates various speed and control commands based on safety, kinematic information, and collision risk. However, DWA alone is insufficient for precise maneuvers such as entering and exiting elevators. For these scenarios, we use the Full State Controller, a low level goal-pursuing motor controller, ensuring safe and accurate elevator navigation.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-6 mt-3 mt-md-0">
@@ -117,7 +115,4 @@ For the global planner, we employ an A* algorithm, akin to Dijkstra's but with a
     <div class="col-sm-6 mt-3 mt-md-0">
         {% include figure.html path="assets/img/project_amr/dijkstra_room.gif" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
-</div>
-<div class="caption">
-    Dijkstra's and the A* algorithm
 </div>
