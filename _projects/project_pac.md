@@ -104,7 +104,7 @@ Apart from kernel shape, we also want to find the best kernel size for our netwo
 
 <div class="text-center">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/project_pac/dialate_rate.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/project_pac/dialate_rate.png" title="example image" class="img-fluid rounded z-depth-1" width="400px" %}
     </div>
     <div class="caption">
         Our experiment shows dialation rate with 3, 5, and 7 yield a better result in 3D object detection.
