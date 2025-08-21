@@ -1,0 +1,126 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: Ken (Jia-Quan) Yu
+    - name: Date of Birth
+      value: 27th August 1995
+    - name: Languages
+      value: English, Mandarin
+
+- title: Education
+  type: time_table
+  contents:
+    - title: Master of Science, Communication Engineering
+      institution: National Taiwan University, Taipei, Taiwan
+      year: 2023
+      description:
+        - title: Thesis Title
+          contents: Image Recognition in Driving Scene Monocular 3D Object Detection and Image Segmentation
+        - title: Selected Courses
+          contents:
+            - Machine Learning
+            - Deep Learning in Computer Vision
+            - Digital Visual Effects
+        - title: Overall GPA
+          contents:
+          - 4.23/4.3
+    - title: Bachelor of Science, Mechanical Engineering
+      institution: National Taiwan University, Taipei, Taiwan
+      year: 2017
+      description:
+        - title: Selected Courses
+          contents: 
+            - Computer Programming
+            - Program Design
+            - Automatic Machine Design
+        - title: Selected Courses GPA
+          contents:
+          - 3.87/4.3
+
+- title: Research Experience
+  type: time_table
+  contents:
+    - title: Master Degree Student
+      institution: Digital Image Processing Lab, National Taiwan University, Taipei, Taiwan
+      year: 2021 - 2023
+      description:
+        - title: Monocular 3D Object Detection
+          contents:
+            - Developed a convolutional module that guides the neural network to exploit visual clues like road landmarks to assess objects distance to the camera. This innovation yielded a +1.4% improvement in average precision (AP)
+        - title: Segmentation plus Depth
+          contents:
+            - Combined panoptic segmentation and depth estimation into a unified, end-to-end network architecture. Visualized segments depth with color map to enhance autonomous driving safety
+        - title: Scene-aware Data Augmentation
+          contents:
+            - Integrated segmented objects into different scenes to reuse their training labels. Used depth maps as references to ensure realistic object label generation, resulting in +2.35% in AP
+        - title: Safety Metric for Object Detection
+          contents:
+            - Calculated weights to on-road objects based on their relevance to driving safety. Utilized the weighted average precision to better evaluate performance of object detection algorithms
+
+    - title: Research Assistant
+      institution: System Optimization Lab, National Taiwan University, Taipei, Taiwan
+      year: 2020
+      description:
+        - Devised and implemented an innovative autonomous multi-robot system that can transport 75 kg payload with single robot and can transport 140 kg payloads with two robots work collaboratively
+        - Developed and refined robotics localization and navigation algorithm based on Visual SLAM and Visual Odometry, enabling the robot to scan maps during exploration and achieve 50mm localization precision
+        - Led a research team of four graduate students to develop multi-robot system and monitor project progress
+    
+    - title: Undergraduate Student
+      institution: System Optimization Lab, National Taiwan University, Taipei, Taiwan
+      year: 2017
+
+- title: Professional Experience
+  type: time_table
+  contents:
+    - title: Software Engineer
+      institution: MediaTek Inc., Hsin Chu, Taiwan
+      year: 2023
+      description: Maintain camera driver to ensure image warping algorithm and its I/O run as efficient as possible
+    - title: Robotic Software Engineer
+      institution: Advanced Robotics CO., LTD., Taipei, Taiwan
+      year: 2018-2019
+      description: 
+        - Assisted to develop navigation and localization algorithm for autonomous luggage-carried robots that served over 200 customers and were capable of traversing a hotel with 250+ rooms
+        - Device software and hardware of an elevator control system, allowing robots to take elevators to 8 floor
+        - Deployed and maintain hotel robot in four Chinese cities. Resolved issues for customers on-site
+
+- title: Awards
+  type: time_table
+  contents:
+    - year: 2023
+      items: 
+        - CVGIP Best Paper Competition, Honorable Mention 
+    - year: 2016
+      items: 
+        - Taiwan Innovative Mechanism Design Competition - Merit Award
+
+- title: Skills
+  type: nested_list
+  contents:
+    - title: Software
+      items: 
+        - PyTorch, Linux, Python, C, C++, OpenCV, Pandas
+    - title: Hardware
+      items:
+        - Raspberry Pi, STM32 board, NVIDIA Jetson Nano, Arduino
+    - title: Languages
+      items:
+        - Mandarin (native), English (fluent, TOFEL iBT 110/120)
+
+- title: Academic Interests
+  type: nested_list
+  contents:
+    - title: Computer Vision
+      items: 
+        - Object Detection 
+        - Image Segmentation
+    - title: Robotics
+      items:
+        - Multi-robot systme
+        - robotics localization
+
+- title: Other Interests
+  type: list
+  contents:
+    - Badminton, Drums
