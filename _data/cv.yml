@@ -38,6 +38,25 @@
           contents:
           - 3.87/4.3
 
+- title: Work Experience
+  type: time_table
+  contents:
+    - title: Software Engineer
+      institution: MediaTek Inc., Hsin Chu, Taiwan
+      year: 2023-2025
+      description:
+        - Develop AI-powered tool to speedup drive team debugging pipeline by parsing logs
+        - Develop code-generate tool for chip velidation
+        - low-power feature in chips
+        - Maintain and develop camera driver to ensure image warping algorithm and its I/O run as efficient as possible
+    - title: Robotic Software Engineer
+      institution: Advanced Robotics CO., LTD., Taipei, Taiwan
+      year: 2018-2019
+      description: 
+        - Assisted to develop navigation and localization algorithm for autonomous luggage-carried robots that served over 200 customers and were capable of traversing a hotel with 250+ rooms
+        - Device software and hardware of an elevator control system, allowing robots to take elevators to 8 floor
+        - Deployed and maintain hotel robot in four Chinese cities. Resolved issues for customers on-site
+
 - title: Research Experience
   type: time_table
   contents:
@@ -70,21 +89,6 @@
       institution: System Optimization Lab, National Taiwan University, Taipei, Taiwan
       year: 2017
 
-- title: Professional Experience
-  type: time_table
-  contents:
-    - title: Software Engineer
-      institution: MediaTek Inc., Hsin Chu, Taiwan
-      year: 2023
-      description: Maintain camera driver to ensure image warping algorithm and its I/O run as efficient as possible
-    - title: Robotic Software Engineer
-      institution: Advanced Robotics CO., LTD., Taipei, Taiwan
-      year: 2018-2019
-      description: 
-        - Assisted to develop navigation and localization algorithm for autonomous luggage-carried robots that served over 200 customers and were capable of traversing a hotel with 250+ rooms
-        - Device software and hardware of an elevator control system, allowing robots to take elevators to 8 floor
-        - Deployed and maintain hotel robot in four Chinese cities. Resolved issues for customers on-site
-
 - title: Awards
   type: time_table
   contents:
@@ -108,17 +112,17 @@
       items:
         - Mandarin (native), English (fluent, TOFEL iBT 110/120)
 
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Computer Vision
-      items: 
-        - Object Detection 
-        - Image Segmentation
-    - title: Robotics
-      items:
-        - Multi-robot systme
-        - robotics localization
+# - title: Academic Interests
+#   type: nested_list
+#   contents:
+#     - title: Computer Vision
+#       items: 
+#         - Object Detection 
+#         - Image Segmentation
+#     - title: Robotics
+#       items:
+#         - Multi-robot systme
+#         - robotics localization
 
 - title: Other Interests
   type: list
