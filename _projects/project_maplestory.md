@@ -24,26 +24,12 @@ category: Side Projects
 <!-- youtube  -->
 <div class="row justify-content-sm-center">
     <div class="col-sm-12">
-        {% include video.html path="https://www.youtube.com/embed/mlXAL1KmFfM" width="770px" height="530px" %}
-    </div>
-</div>
-
-<!-- youtube  -->
-<div class="row justify-content-sm-center">
-    <div class="col-sm-12">
-        {% include video.html path="https://www.youtube.com/embed/eh3yJc0sMIY" width="770px" height="530px" %}
+        {% include video.html path="https://www.youtube.com/embed/QeEXLHO8KN4" width="770px" height="530px" %}
     </div>
 </div>
 
 ## Result
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/mhw_result.png" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/mhw_result_123.png" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
+
+
+

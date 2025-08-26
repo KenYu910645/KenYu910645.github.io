@@ -41,7 +41,7 @@
 - title: Work Experience
   type: time_table
   contents:
-    - title: Software Engineer
+    - title: Camera Software Engineer
       institution: MediaTek Inc., Hsin Chu, Taiwan
       year: 2023 - 2025
       description:
@@ -69,7 +69,7 @@
   contents:
     - year: 2023
       items: 
-        - CVGIP Best Paper Competition, Honorable Mention 
+        - "[CVGIP Best Paper Competition, Honorable Mention](assets/pdf/cvgip_award.pdf)"
     - year: 2016
       items: 
         - Taiwan Innovative Mechanism Design Competition - Merit Award
@@ -79,7 +79,7 @@
   contents:
     - title: Software
       items: 
-        - PyTorch, Linux, Python, C, C++, OpenCV, Pandas
+        - PyTorch, Linux, Python, C, C++, OpenCV, Pandas, Gerrit, Confluence
     - title: Hardware
       items:
         - Raspberry Pi, STM32 board, NVIDIA Jetson Nano, Arduino
@@ -90,4 +90,4 @@
 - title: Other Interests
   type: list
   contents:
-    - Badminton, Pickleball, Drums
+    - Badminton, Pickleball, Calligraphy
