@@ -4,7 +4,7 @@ title: Machine Learning
 description: Churn Rate Ananlyse
 img: assets/img/preview/html.png
 importance: 4
-category: Courses
+category: Course Projects
 ---
 
 <!-- hyperlink icon  -->

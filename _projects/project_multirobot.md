@@ -4,7 +4,7 @@ title: Multi-robot Collaboration
 description: Factory Autonomous Transportation System
 img: assets/img/preview/ocmid.png
 importance: 3
-category: Work
+category: Robotics
 ---
 
 <!-- hyperlink icon  -->

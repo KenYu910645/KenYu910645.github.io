@@ -4,7 +4,7 @@ title: Auto Hospital Appointment
 description: A webcrawler for hosptical auto appointment
 img: assets/img/preview/webcrawler.png
 importance: 4
-category: Fun
+category: Side Projects
 ---
 
 <!-- hyperlink icon  -->

@@ -4,7 +4,7 @@ title: Luggage Carrying Robot
 description: Autonomous Mobile Vehicle
 img: assets/img/preview/amr.png
 importance: 3
-category: Work
+category: Robotics
 ---
 
 <!-- hyperlink icon  -->

@@ -4,7 +4,7 @@ title: 3D printed Calligraphy
 description: When Chinese calligraphy meets 3D printer
 img: assets/img/printer/love.jpg
 importance: 4
-category: Fun
+category: Side Projects
 ---
 
 <div class="row">

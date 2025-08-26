@@ -4,7 +4,7 @@ title: Race Car
 description: Autonomous race car model
 img: assets/img/preview/racecar.png
 importance: 1
-category: Fun
+category: Side Projects
 # related_publications: master_thesis
 ---
 

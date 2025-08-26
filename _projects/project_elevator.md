@@ -4,7 +4,7 @@ title: Elevator Control System
 description: let robot control elevator 
 img: assets/img/preview/elevator_well.jpg
 importance: 4
-category: Work
+category: Robotics
 ---
 
 <!-- hyperlink icon  -->

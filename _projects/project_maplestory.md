@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Game Mining Bot 
-description: An auto dragonite mining program for Monster Hunter World
+title: MapleStory LevleUp AutoBot 
+description: An auto levelup bot for MapleStory Artale
 img: assets/img/preview/mhw.png
 importance: 4
 category: Side Projects
@@ -12,7 +12,7 @@ category: Side Projects
     <!-- github icon -->
     <div class="col-sm mt-3 mt-md-0 text-center">
         <div class="icon-with-text">
-            <a href="https://github.com/KenYu910645/mhw_cv.git" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/KenYu910645/MapleStoryAutoLevelUp" target="_blank" rel="noopener noreferrer">
             <span class="icon-text h3">GitHub</span>
             <i class="fa-brands fa-github h3"></i></a>
         </div>

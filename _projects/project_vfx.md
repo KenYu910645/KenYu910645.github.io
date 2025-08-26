@@ -4,7 +4,7 @@ title: Visual Effects
 description: Become a Jedi Master in 5 minutes
 img: assets/img/preview/vfx.png
 importance: 3
-category: Courses
+category: Course Projects
 ---
 
 <!-- hyperlink icon  -->

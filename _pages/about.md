@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Computer vision and robotics researcher
+subtitle: Computer vision and robotics engineer
 
 profile:
   align: right # right
@@ -17,10 +17,10 @@ latest_posts: false # true  # includes a list of the newest posts
 selected_papers: false # true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
-Ken Jia-Quan Yu currently works as a software engineer at MediaTek Inc., where his primary responsibility is maintaining and developing image warping drivers. Before joining MediaTek, Ken earned his master's degree from National Taiwan University in Communication Engineering Department, where he focusses on monocular 3D object detection and image segmentation. Prior to his Master's, Ken completed his undergraduate studies at National Taiwan University, majoring in Mechanical Engineering.
+Ken (Jia-Quan) Yu is a software engineer at MediaTek Inc., where he develops and maintains mobile phone camera drivers and integrates AI tools to improve software team efficiency in porting and debugging. He holds a master’s degree in Communication Engineering from National Taiwan University, where he specialized in monocular 3D object detection and image segmentation, and a bachelor’s degree in Mechanical Engineering from the same institution.
 
-Ken's main research interests lie in computer vision and robotics. He is particularly fascinated by how AI can enhance the understanding of 3D scene structures and revolutionize robot perception algorithms. He is also intrigued by image processing and image generation.
+With three years of software development experience, Ken has worked across semiconductor, robotics, and computer vision domains. He previously contributed to a robotics startup and led a multi-robot transportation system project at National Taiwan University before joining MediaTek. These roles strengthened his expertise in computer vision, embedded systems, and automation.
 
-Beyond his academic pursuits, Ken has two years of software development experience. He worked as a software engineer at a robotics startup for one year. Subsequently, he led a multi-robot transportation system project as a research assistant in National Taiwan University. These professional experiences have significantly honed his software development skills and fueled his passion for computer science.
+Ken’s core interests center on computer vision, robotics, and AI applications in real-world systems. He is particularly driven by building solutions that enhance efficiency, automate workflows, and bridge the gap between AI research and production-grade software.
 
-In his leisure time, Ken enjoys playing badminton and drums.
+Outside of work, Ken enjoys playing badminton, pickleball, and drums.
