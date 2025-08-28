@@ -62,10 +62,20 @@ Initially, I used colored template matching, which gave highly accurate results.
 
 To address this, I experimented with more lightweight alternatives. One effective solution was to perform template matching based only on contours of mobs. This method ignores color and focuses purely on shape similarity. While it’s slightly less accurate and occasionally produces false positives, it's significantly faster. After multiple rounds of trial and error, I found this contour-based approach to be the best trade-off between performance and speed, making it the most practical solution for real-time mob detection.
 
-<div class="row">
+<!-- <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/project_maplestory/skeleton_soldier.png" title="Mob template download from maplestory.io" class="img-fluid rounded z-depth-1" %}
     </div>
+</div> -->
+
+<div class="row">
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.html 
+        path="assets/img/project_maplestory/skeleton_soldier.png" 
+        title="Mob template download from maplestory.io" 
+        caption="Figure 1: Example mob template used for detection" 
+        class="img-fluid rounded z-depth-1" %}
+  </div>
 </div>
 
 <div class="row">
@@ -87,7 +97,7 @@ While the bot is running, it continuously monitors the player's current location
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/project_maplestory/Color Code Table.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/project_maplestory/route_color_code.png" title="Color Code Table" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
@@ -141,7 +151,7 @@ Main Tab – Quick-start panel to configure key options and control start/stop a
 Advanced Settings – A more detailed panel for fine-tuning behaviors, like attack logic, potion thresholds, and timers.
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/project_maplestory/adv_settings_yab.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/project_maplestory/adv_settings_tab.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
