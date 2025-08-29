@@ -70,11 +70,14 @@ To address this, I experimented with more lightweight alternatives. One effectiv
 
 <div class="row">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.html 
-        path="assets/img/project_maplestory/skeleton_soldier.png" 
-        title="Mob template download from maplestory.io" 
-        caption="Figure 1: Example mob template used for detection" 
-        class="img-fluid rounded z-depth-1" %}
+    <figure class="figure">
+      <img src="assets/img/project_maplestory/skeleton_soldier.png"
+           alt="Mob template download from maplestory.io"
+           class="figure-img img-fluid rounded z-depth-1">
+      <figcaption class="figure-caption text-center">
+        Figure 1: Example mob template used for detection
+      </figcaption>
+    </figure>
   </div>
 </div>
 
