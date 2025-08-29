@@ -49,9 +49,12 @@ To begin with, we need to get player location on screen. Early on I tried locati
 To get the minimap, the bot crops the minimap ROI, converts it to HSV, applies a yellow color mask, and takes the dot’s centroid to get a precise, per-frame position. The result is fast, robust to occlusion, and consistent across maps.
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm mt-3 mt-md-0 text-center">
         {% include figure.html path="assets/img/project_maplestory/minimap.png" title="minimap with player location" class="img-fluid rounded z-depth-1" %}
     </div>
+</div>
+<div class="caption">
+    The character’s location is marked as a yellow dot on the minimap.
 </div>
 
 ### Mobs detection
@@ -62,29 +65,22 @@ Initially, I used colored template matching, which gave highly accurate results.
 
 To address this, I experimented with more lightweight alternatives. One effective solution was to perform template matching based only on contours of mobs. This method ignores color and focuses purely on shape similarity. While it’s slightly less accurate and occasionally produces false positives, it's significantly faster. After multiple rounds of trial and error, I found this contour-based approach to be the best trade-off between performance and speed, making it the most practical solution for real-time mob detection.
 
-<!-- <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0 text-center">
         {% include figure.html path="assets/img/project_maplestory/skeleton_soldier.png" title="Mob template download from maplestory.io" class="img-fluid rounded z-depth-1" %}
     </div>
-</div> -->
-
-<div class="row">
-  <div class="col-sm mt-3 mt-md-0">
-    <figure class="figure">
-      <img src="assets/img/project_maplestory/skeleton_soldier.png"
-           alt="Mob template download from maplestory.io"
-           class="figure-img img-fluid rounded z-depth-1">
-      <figcaption class="figure-caption text-center">
-        Figure 1: Example mob template used for detection
-      </figcaption>
-    </figure>
-  </div>
+</div>
+<div class="caption">
+    An mob template downloaded from mapleStory.io webiste.
 </div>
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm mt-3 mt-md-0 text-center">
         {% include figure.html path="assets/img/project_maplestory/mob_detection.png" title="Mob detection Result" class="img-fluid rounded z-depth-1" %}
     </div>
+</div>
+<div class="caption">
+    The bot performs template matching around the character. If the matching score exceeds a set threshold, it is marked as a positive detection and highlighted with a green rectangle.
 </div>
 
 ### Route planning
@@ -93,15 +89,21 @@ The route is manually drawn on the map image and automatically loaded when the u
 While the bot is running, it continuously monitors the player's current location and searches for the nearest route pixel. Once found, it reads the pixel's color and translates it into a corresponding movement command, enabling the character to follow the route and patrol the map in a smooth, continuous loop.
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm mt-3 mt-md-0 text-center">
         {% include figure.html path="assets/img/project_maplestory/camp1_route.png" title="Drawn Route Map" class="img-fluid rounded z-depth-1" %}
     </div>
+</div>
+<div class="caption">
+    An example of a route map. The route is manually drawn on the image, indicating what action the character should perform at every location on the map.
 </div>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/project_maplestory/route_color_code.png" title="Color Code Table" class="img-fluid rounded z-depth-1" %}
     </div>
+</div>
+<div class="caption">
+    Color-coded actions are used on the route map to denote the predefined movements at each location.
 </div>
 
 ### Rune Solver
@@ -116,6 +118,9 @@ Upon activation, a mini-game with directional arrows will pop up. To solve this,
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/project_maplestory/rune_solve.gif" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
+</div>
+<div class="caption">
+    Rune solving involves detecting the rune message, locating the rune itself (purple icon), and then, after entering the arrow mini-game, identifying the correct arrow direction and outputting the corresponding input.
 </div>
 
 ### Finite State Machine
@@ -134,9 +139,12 @@ This is achieved by detecting the HP and MP bars in the game UI. Using color mas
 When the HP drops below a threshold, the bot will automatically trigger a healing spell or use a potion—just in time to prevent death, while also avoiding unnecessary potion waste.
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm mt-3 mt-md-0 text-center">
         {% include figure.html path="assets/img/project_maplestory/health_bar.png" title="HP/MP/EXP UI" class="img-fluid rounded z-depth-1" %}
     </div>
+</div>
+<div class="caption">
+    To detect the player’s health, mana, and EXP bars, the bot masks out the red, blue, and green pixels, clusters them into bar shapes, and calculates their lengths to estimate the exact percentage remaining.
 </div>
 
 ## UI framework
