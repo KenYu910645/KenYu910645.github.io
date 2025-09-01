@@ -72,8 +72,9 @@
         - linkname: "CVGIP Best Paper Competition, Honorable Mention"
           link: "/assets/pdf/cvgip_award.pdf"
     - year: 2016
-      items: 
-        - Taiwan Innovative Mechanism Design Competition - Merit Award
+      linklocalitems:
+        - linkname: "Taiwan Innovative Mechanism Design Competition - Merit Award"
+          link: "/assets/pdf/me_merit_award.pdf"
 
 - title: Skills
   type: nested_list
