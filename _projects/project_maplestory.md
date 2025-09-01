@@ -183,4 +183,3 @@ Currently, the bot runs effectively and robustly on supported maps for several h
 To improve this, future work will focus on automating and simplifying the route planning process. One promising direction is to abstract the route into basic terrain elements—specifically, platforms and ladders, which are common across nearly all maps.
 
 By marking just these two elements, the bot could potentially autonomously generate navigation paths, figuring out how to move between platforms and climb ladders without needing a manually drawn route. This would significantly lower the entry barrier for new users and make the system far more scalable and adaptable to different maps.
-
