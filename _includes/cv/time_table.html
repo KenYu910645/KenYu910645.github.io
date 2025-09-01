@@ -99,6 +99,23 @@
               {% endfor %}
               </div>
             {% endif %}
+            {% if content.linklocalitems %}
+              <div class="container-links ml-1 ml-md-4">
+              {% for item in content.linklocalitems %}
+                  {% if item.link %}
+                    <div class="container-link-button">
+                      {% if item.linkname %}
+                        <a href="{{ item.link | relative_url }}" target="_blank" rel="noopener" class="btncv z-depth-0">
+                          {{ item.linkname | default: "doc" }}
+                        </a>
+                      {% else %}
+                        <a href="{{ item.link }}" target="_blank" class="btncv z-depth-0">doc</a>
+                      {% endif %}
+                    </div>
+                  {% endif %}
+              {% endfor %}
+              </div>
+            {% endif %}
           </div>
         </div>
       </li>

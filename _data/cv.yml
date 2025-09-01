@@ -68,9 +68,9 @@
   type: time_table
   contents:
     - year: 2023
-      linkitems:
+      linklocalitems:
         - linkname: "CVGIP Best Paper Competition, Honorable Mention"
-          link: "assets/pdf/cvgip_award.pdf"
+          link: "/assets/pdf/cvgip_award.pdf"
     - year: 2016
       items: 
         - Taiwan Innovative Mechanism Design Competition - Merit Award
