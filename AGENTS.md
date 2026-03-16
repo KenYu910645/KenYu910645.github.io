@@ -95,7 +95,7 @@ Each file becomes a URL route. Front matter controls navigation order and layout
 |------|-------|-----------------|
 | `about.md` | `/` | `layout: about`, `profile:` block with image/bio |
 | `projects.md` | `/projects/` | `layout: page`, renders `_includes/projects.html` |
-| `publications.md` | `/publications/` | `layout: page`, uses `{% bibliography %}` tag |
+| `publications.md` | `/publications/` | `layout: page`, uses `{% raw %}{% bibliography %}{% endraw %}` tag |
 | `cv.md` | `/cv/` | `layout: cv`, `cv_pdf:` for download button |
 
 **To add a new page:** create a `.md` file here with `permalink`, `title`, `nav: true`, and
