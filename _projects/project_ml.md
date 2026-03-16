@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Machine Learning
-description: Churn Rate Ananlyse
+description: Churn Rate Analysis
 img: assets/img/preview/html.png
 importance: 4
 category: Course Projects
