@@ -1,7 +1,7 @@
 ---
 layout: page
-title: HoneyHubs
-description: A Pikmin platform app — manage your Pikmin squads, track your hubs, and grow your garden!
+title: HoneyHub
+description: A mobile app for Pikmin Bloom players to coordinate mushroom raids, trade postcards, and use honey as an in-app currency.
 img: assets/img/preview/honeyhubs.svg
 importance: 1
 category: Side Projects
@@ -10,46 +10,26 @@ category: Side Projects
 <div class="row" style="margin-bottom: 20px;">
     <div class="col-sm mt-3 mt-md-0 text-center">
         <div class="icon-with-text">
-            <a href="/honeyhubs/support/">
-            <span class="icon-text h3">Support & Campaign</span>
-            <i class="fa-solid fa-hand-holding-heart h3"></i></a>
-        </div>
-    </div>
-    <div class="col-sm mt-3 mt-md-0 text-center">
-        <div class="icon-with-text">
-            <a href="/honeyhubs/privacy/">
-            <span class="icon-text h3">Privacy Policy</span>
-            <i class="fa-solid fa-shield-halved h3"></i></a>
+            <a href="https://github.com/KenYu910645/mushroomHunter" target="_blank" rel="noopener noreferrer">
+            <span class="icon-text h3">GitHub</span>
+            <i class="fa-brands fa-github h3"></i></a>
         </div>
     </div>
 </div>
 
----
+## About HoneyHub
 
-## About HoneyHubs
+**HoneyHub** is a mobile app for **Pikmin Bloom** players who want to coordinate mushroom battles more easily and exchange postcards they discover in the game. The app turns these player-to-player interactions into a shared platform with lightweight social features, a marketplace, and a honey-based in-app economy.
 
-**HoneyHubs** is a Pikmin-themed platform app that brings the beloved garden strategy experience to your fingertips. Manage your Pikmin squads, discover hidden hubs, and cultivate your ecosystem — all from your mobile device.
+It focuses on two practical use cases: helping players host or join mushroom raid rooms together, and giving players a way to buy and sell postcards with other users. Around those core flows, HoneyHub adds daily rewards, notifications, tutorials, and account progression features to keep the experience active and approachable.
 
 ### Features
 
-- 🌱 **Squad Management** — Organize and track your Pikmin across different types and locations
-- 🏡 **Hub Exploration** — Discover and manage multiple hubs in your adventure
-- 📊 **Progress Tracking** — Keep track of collectibles, missions, and achievements
-- 🍯 **HoneyHubs Network** — Connect with other players and share strategies
-
----
-
-### Links
-
-<div class="row" style="margin-top: 20px;">
-    <div class="col-sm mt-3 mt-md-0 text-center">
-        <a href="/honeyhubs/support/" class="btn btn-outline-primary">
-            📣 Support / Campaign Page
-        </a>
-    </div>
-    <div class="col-sm mt-3 mt-md-0 text-center">
-        <a href="/honeyhubs/privacy/" class="btn btn-outline-secondary">
-            🔒 Privacy Policy
-        </a>
-    </div>
-</div>
+- **Mushroom raid coordination** — Players can host rooms, join raids, manage deposits, and organize mushroom fights with other Pikmin Bloom players.
+- **Invite and room sharing** — Deep-link and invite flows make it easier to pull other players into the same mushroom battle.
+- **Postcard marketplace** — Users can list postcards for sale, browse available cards, and complete buyer/seller transactions in-app.
+- **Honey currency system** — Honey acts as the in-app currency for joining room flows, postcard transactions, rewards, and balance-based actions.
+- **Daily rewards** — A recurring reward loop encourages players to return and continue participating each day.
+- **Notifications and event inbox** — In-app event history and alerts help users keep up with room updates, orders, and action items.
+- **Onboarding tutorials** — Guided tutorial flows help new users learn the mushroom and postcard systems more quickly.
+- **Premium membership** — An optional premium tier expands some limits and reward amounts without changing the core experience.
