@@ -66,9 +66,9 @@ if (ninja) {
           window.location.href = "/projects/project_elevator/";
         },
       },{
-        id: "project-honeyhubs",
-        title: "HoneyHubs",
-        description: "A Pikmin platform app — manage your Pikmin squads, track your hubs, and grow your garden!",
+        id: "project-honeyhub",
+        title: "HoneyHub",
+        description: "A mobile app for Pikmin Bloom players to coordinate mushroom raids, trade postcards, and use honey as an in-app currency.",
         section: "Projects",
         handler: () => {
           window.location.href = "/projects/project_honeyhubs/";
