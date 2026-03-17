@@ -3,6 +3,8 @@
 This file describes the structure, purpose, and conventions of this repository for anyone
 (human or AI agent) working on it. Read this before making changes.
 
+AI agents must read `AGENTS.md` before processing any task in this repository.
+
 ---
 
 ## Project Overview
@@ -330,6 +332,97 @@ Edit `_config.yml`. Social link fields are near the top under `# Social integrat
 docker-compose up
 # Site available at http://localhost:8080
 ```
+
+### Local development with Homebrew Ruby
+
+Use this workflow when you need to verify the site locally after syncing newer `al-folio`
+changes. The merged upstream stack expects a modern Ruby/Bundler toolchain.
+
+1. Install Ruby 3.3 via Homebrew:
+```bash
+brew install ruby@3.3
+```
+2. Use the Homebrew Ruby and gem bin paths in your shell:
+```bash
+export PATH="/opt/homebrew/opt/ruby@3.3/bin:/opt/homebrew/lib/ruby/gems/3.3.0/bin:$PATH"
+```
+3. Confirm the toolchain:
+```bash
+ruby -v
+bundle -v
+```
+Expected: Ruby `3.3.x` and Bundler `4.x` after `bundle install`.
+4. Install dependencies:
+```bash
+bundle install
+```
+5. Build the site:
+```bash
+bundle exec jekyll build
+```
+6. Serve the built site locally:
+```bash
+bundle exec jekyll serve --host 127.0.0.1 --port 4000
+```
+7. Open the preview:
+```text
+http://127.0.0.1:4000/
+```
+
+### Verified local workflow
+
+The following workflow was successfully used in this repository on March 17, 2026:
+
+1. Install `ruby@3.3` with Homebrew.
+2. Export:
+```bash
+export PATH="/opt/homebrew/opt/ruby@3.3/bin:/opt/homebrew/lib/ruby/gems/3.3.0/bin:$PATH"
+```
+3. Run:
+```bash
+bundle install
+bundle exec jekyll build
+bundle exec jekyll serve --host 127.0.0.1 --port 4000
+```
+4. Verify key pages:
+   - `/`
+   - `/projects/`
+   - `/cv/`
+
+### Required workflow for AI agents
+
+1. Read `AGENTS.md` before doing any task.
+2. If any code, config, template, content, styling, or asset affecting the site is changed, rebuild the project locally.
+3. After rebuilding, present the localhost preview URL to the user so they can inspect the result.
+4. Preferred local preview command:
+```bash
+bundle exec jekyll serve --host 127.0.0.1 --port 4000
+```
+5. Preferred preview URL:
+```text
+http://127.0.0.1:4000/
+```
+
+### Upstream sync notes
+
+If you force-merge a newer `al-folio` upstream into this repo:
+
+1. Prefer doing the merge on a dedicated branch, not `master`.
+2. Expect many add/add conflicts if the histories are unrelated.
+3. Keep personal content files unless you intentionally want upstream sample content:
+   - `_pages/about.md`
+   - `_pages/projects.md`
+   - `_pages/publications.md`
+   - `_pages/cv.md`
+   - `_data/cv.yml`
+   - `_bibliography/papers.bib`
+4. Prune upstream demo/sample content before merging back:
+   - sample `_posts/`
+   - sample `_books/`
+   - sample `_teachings/`
+   - sample `_projects/`
+   - demo media/assets and readme preview files
+5. Re-run local build and localhost preview after pruning.
 
 ---
 
