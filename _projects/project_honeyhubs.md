@@ -15,6 +15,13 @@ category: Side Projects
             <i class="fa-brands fa-github h3"></i></a>
         </div>
     </div>
+    <div class="col-sm mt-3 mt-md-0 text-center">
+        <div class="icon-with-text">
+            <a href="/support.html">
+            <span class="icon-text h3">Support</span>
+            <i class="fa-solid fa-circle-question h3"></i></a>
+        </div>
+    </div>
 </div>
 
 ## About HoneyHub
@@ -33,3 +40,20 @@ It focuses on two practical use cases: helping players host or join mushroom rai
 - **Notifications and event inbox** — In-app event history and alerts help users keep up with room updates, orders, and action items.
 - **Onboarding tutorials** — Guided tutorial flows help new users learn the mushroom and postcard systems more quickly.
 - **Premium membership** — An optional premium tier expands some limits and reward amounts without changing the core experience.
+
+---
+
+### Links
+
+<div class="row" style="margin-top: 20px;">
+    <div class="col-sm mt-3 mt-md-0 text-center">
+        <a href="/support.html" class="btn btn-outline-primary">
+            Support Page
+        </a>
+    </div>
+    <div class="col-sm mt-3 mt-md-0 text-center">
+        <a href="/honeyhubs/privacy/" class="btn btn-outline-secondary">
+            Privacy Policy
+        </a>
+    </div>
+</div>

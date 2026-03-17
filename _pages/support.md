@@ -1,10 +1,9 @@
 ---
 layout: page
 title: HoneyHub Support
-permalink: /honeyhubs/support/
+permalink: /support.html
 description: Support information for the HoneyHub iOS app.
 nav: false
-support_legacy: true
 ---
 
 {% include honeyhub_support_content.html %}
