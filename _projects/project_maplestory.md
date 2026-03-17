@@ -1,6 +1,6 @@
 ---
 layout: page
-title: MapleStory LevleUp AutoBot 
+title: MapleStory LevleUp AutoBot
 description: An auto levelup bot for MapleStory Artale
 img: assets/img/project_maplestory/cover.png
 importance: 4
@@ -84,6 +84,7 @@ To address this, I experimented with more lightweight alternatives. One effectiv
 </div>
 
 ### Route planning
+
 The route is manually drawn on the map image and automatically loaded when the user selects a map. Each point along the route is encoded with a specific pixel color, where each color represents a different navigation command (e.g., walk left, jump right, climb ladder).
 
 While the bot is running, it continuously monitors the player's current location and searches for the nearest route pixel. Once found, it reads the pixel's color and translates it into a corresponding movement command, enabling the character to follow the route and patrol the map in a smooth, continuous loop.
@@ -124,6 +125,7 @@ Upon activation, a mini-game with directional arrows will pop up. To solve this,
 </div>
 
 ### Finite State Machine
+
 To manage the various behaviors of the bot—such as hunting mobs, finding runes, or solving rune mini-games—I implemented a Finite State Machine (FSM).
 
 Each stage of the bot’s behavior is represented as a distinct state, and transitions between states are clearly defined. For example, when a rune appears, the bot transitions from the "Hunting" state to the "Finding Rune" state, and later to the "Solving Rune" state once it's activated.
@@ -148,11 +150,13 @@ When the HP drops below a threshold, the bot will automatically trigger a healin
 </div>
 
 ## UI framework
+
 To make the bot more user-friendly and customizable, I developed a graphical user interface (GUI) using PySide6 (Qt for Python). This UI framework not only exposes all bot settings but also includes real-time debugging tools to help users fine-tune the bot’s behavior.
 
 The GUI includes:
 
 Main Tab – Quick-start panel to configure key options and control start/stop actions.
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/project_maplestory/main_tab.png" title="example image" class="img-fluid rounded z-depth-1" %}
@@ -160,6 +164,7 @@ Main Tab – Quick-start panel to configure key options and control start/stop a
 </div>
 
 Advanced Settings – A more detailed panel for fine-tuning behaviors, like attack logic, potion thresholds, and timers.
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/project_maplestory/adv_settings_tab.png" title="example image" class="img-fluid rounded z-depth-1" %}
@@ -171,6 +176,7 @@ Visualization Tabs – Real-time windows for game capture preview, mob detection
 Users can easily select maps, assign key bindings, adjust bot behavior, and monitor logs—all without modifying any code. The visual feedback tools are especially helpful for debugging, giving users insights into how the bot interprets the game environment.
 
 ## Conclusion
+
 With the help of this tool, I was able to level up my level 32 Priest to level 87 in just a few weeks—completely hands-free. Instead of manually grinding monsters for hours, I simply let the bot run overnight and wake up to see how much EXP my character gained and what valuable loot was collected.
 
 Beyond its practical use, this project also demonstrates that computer vision techniques alone are sufficient to automate gameplay in online games like MapleStory. Without needing to access game memory, the bot relies purely on template matching and HSV-based color detection to handle core gameplay tasks.
@@ -178,6 +184,7 @@ Beyond its practical use, this project also demonstrates that computer vision te
 This approach is not only lightweight and non-intrusive but also highly transferable, making it easy to adapt to other 2D games with similar UI-based mechanics.
 
 ## Future Work
+
 Currently, the bot runs effectively and robustly on supported maps for several hours—or even indefinitely. However, adding custom maps is still a manual and time-consuming process. Users must capture the minimap themselves and hand-draw the navigation route, which can be quite challenging, especially for first-time users.
 
 To improve this, future work will focus on automating and simplifying the route planning process. One promising direction is to abstract the route into basic terrain elements—specifically, platforms and ladders, which are common across nearly all maps.

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Elevator Control System
-description: let robot control elevator 
+description: let robot control elevator
 img: assets/img/preview/elevator_well.jpg
 importance: 4
 category: Robotics
@@ -34,9 +34,10 @@ category: Robotics
 To enable the autonomous robot to travel between different hotel floors, we developed an elevator control system. This system is designed to respond to the robot's commands, managing tasks such as opening and closing elevators doors and pressing the floor buttons as needed.
 
 ## Approach
+
 We installed two hardware components to the elevator system, avoiding major modifications to its existing elevator control system.
 
-The first hardware is a button control board installed within the elevator. This board can detect the status of each button and press them as needed. The second hardware is the elevator server which can receive robots commands via Bluetooth or Wi-Fi. 
+The first hardware is a button control board installed within the elevator. This board can detect the status of each button and press them as needed. The second hardware is the elevator server which can receive robots commands via Bluetooth or Wi-Fi.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0 text-center">
@@ -48,6 +49,7 @@ The first hardware is a button control board installed within the elevator. This
 </div>
 
 ## Installation
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0 text-center">
         {% include figure.html path="assets/img/project_elevator/elevator_control_board.jpg" title="Elevator Gateway Testing Program" class="img-fluid rounded z-depth-1" width="400"%}
@@ -83,4 +85,3 @@ The first hardware is a button control board installed within the elevator. This
 <div class="caption">
     When the AMR enters a crowded elevator, it may lead to complaints from hotel guests.
 </div>
-

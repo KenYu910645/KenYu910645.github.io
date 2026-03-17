@@ -66,7 +66,7 @@ layout: default
 
     <!-- Social -->
     {% if page.social %}
-      {% assign cv_page = site.pages | where: "permalink", "/cv/" | first %}
+      {% assign cv_page = site.pages | where: 'permalink', '/cv/' | first %}
       {% assign cv_pdf_href = '/cv/' | relative_url %}
       {% if cv_page and cv_page.cv_pdf %}
         {% if cv_page.cv_pdf contains '://' %}

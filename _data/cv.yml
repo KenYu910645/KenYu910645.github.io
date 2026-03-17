@@ -24,19 +24,19 @@
             - Digital Visual Effects
         - title: Overall GPA
           contents:
-          - 4.23/4.3
+            - 4.23/4.3
     - title: Bachelor of Science, Mechanical Engineering
       institution: National Taiwan University, Taipei, Taiwan
       year: 2017
       description:
         - title: Selected Courses
-          contents: 
+          contents:
             - Computer Programming
             - Program Design
             - Automatic Machine Design
         - title: Selected Courses GPA
           contents:
-          - 3.87/4.3
+            - 3.87/4.3
 
 - title: Work Experience
   type: time_table
@@ -80,7 +80,7 @@
   type: nested_list
   contents:
     - title: Software
-      items: 
+      items:
         - PyTorch, Linux, Python, C, C++, OpenCV, Pandas, Gerrit, Confluence
     - title: Hardware
       items:

@@ -32,13 +32,13 @@ Thank you for your interest in **HoneyHubs**! This page is the central hub for o
 
 We are building HoneyHubs to bring the Pikmin experience to a broader audience. Here's what we're working toward:
 
-| Goal | Status |
-|---|---|
-| Core app development | 🔨 In Progress |
+| Goal                           | Status         |
+| ------------------------------ | -------------- |
+| Core app development           | 🔨 In Progress |
 | Pikmin squad management system | 🔨 In Progress |
-| Hub exploration features | 📋 Planned |
-| Community features | 📋 Planned |
-| iOS & Android release | 📋 Planned |
+| Hub exploration features       | 📋 Planned     |
+| Community features             | 📋 Planned     |
+| iOS & Android release          | 📋 Planned     |
 
 ---
 

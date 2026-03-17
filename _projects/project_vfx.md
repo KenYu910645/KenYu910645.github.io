@@ -19,7 +19,8 @@ category: Course Projects
     </div>
 </div>
 
-##  Demo Video 
+## Demo Video 
+
 <!-- youtube  -->
 <div class="row justify-content-sm-center">
     <div class="col-sm-12">

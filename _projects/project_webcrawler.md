@@ -19,6 +19,4 @@ category: Side Projects
     </div>
 </div>
 
-
 WIP
-

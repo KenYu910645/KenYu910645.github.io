@@ -23,14 +23,17 @@ By using HoneyHubs, you agree to the collection and use of information in accord
 ## 1. Information We Collect
 
 ### 1.1 Information You Provide
+
 - **Account information** (if applicable): username, display name, and email address used to register or log in.
 - **User-generated content**: Pikmin squad configurations, hub notes, and other content you create within the App.
 
 ### 1.2 Information Collected Automatically
+
 - **Usage data**: Pages visited, features used, time spent in the App, and crash logs.
 - **Device information**: Device type, operating system version, and unique device identifiers.
 
 ### 1.3 Information We Do NOT Collect
+
 - We do **not** collect your precise GPS location.
 - We do **not** collect financial or payment information.
 - We do **not** collect contacts or address book data.
@@ -53,6 +56,7 @@ We use the information we collect to:
 We do **not** sell, trade, or rent your personal information to third parties.
 
 We may share information only in these limited circumstances:
+
 - **Legal compliance**: If required by law, regulation, or valid legal process.
 - **Safety**: To protect the rights, property, or safety of our users or the public.
 - **Service providers**: With trusted third-party services that help us operate the App (e.g., analytics, crash reporting), bound by confidentiality obligations.

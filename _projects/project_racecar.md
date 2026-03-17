@@ -8,7 +8,7 @@ category: Side Projects
 # related_publications: master_thesis
 ---
 
-<!-- hyperlink icon 
+<!-- hyperlink icon
 <div class="row" style="margin-bottom: 20px;">
     <div class="col-sm mt-3 mt-md-0 text-center">
         <div class="icon-with-text">
@@ -33,8 +33,6 @@ category: Side Projects
     </div>
 </div> -->
 
-
-
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/project_racecar/drawing.png" title="Intro image" class="img-fluid rounded z-depth-1" %}
@@ -44,7 +42,6 @@ category: Side Projects
     
 </div>
 
-
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/project_racecar/real.png" title="Intro image" class="img-fluid rounded z-depth-1" %}
@@ -53,7 +50,6 @@ category: Side Projects
 <div class="caption">
     
 </div>
-
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">

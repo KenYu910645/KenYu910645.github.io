@@ -35,6 +35,7 @@ Modern factories have an increasing need for efficient transportation of product
 However, large robots often present difficulties in scheduling and maneuverability in factor setting. To address this, we propose a novel multi-agent transportation system. In our proposed system, each AMR can carry up to 60 kilograms individually, but when combined, they can transport loads of up to 120 kilograms. The key is to develop a system where separated robots can cooperate and move as a unified entity towards a common goal.
 
 ## Hardware
+
 Our individual Autonomous Mobile Robot (AMR) is outfitted with two 2D Lidars, one positioned at the front and the other at the rear. It also features a ZED 2 2D stereo camera at the front. The computational platform includes an NVIDIA Nano, tasked with image processing, and a Raspberry Pi 4 for handling all other algorithms. The AMR is powered by two brushed motors with encoders, providing precise wheel movement information. It operates on a 29-volt battery, enabling continuous operation for approximately 30 minutes. Additionally, the AMR is equipped with an engagement mechanism on top, utilized for attaching and dettaching to loads shelf.
 
 <div class="row">
@@ -61,7 +62,7 @@ Our loading platform is constructed using sturdy aluminum structures. At the cen
 
 Our software architecture is structured as follows: The Nvidia Jetson Nano is tasked with processing the dual camera images. We use RTABMAP as our visual-based SLAM algorithm to build maps while the robot scans the environment. Additionally, we leverage the ZED camera's built-in visual-inertial odometry for accurate estimations of the robot's kinematic information. To recongize load shelf, we use AprilTags (fiducial markers).
 
-Live data from the ZED camera and the Nvidia Jetson Nano is transmitted to the Raspberry Pi via Ethernet. The Raspberry Pi is crucial for processing LIDAR data, which is vital for real-time obstacle avoidance. It also runs navigation algorithms, including A* and the Dynamic Window Approach, to determine optimal navigation commands. These commands are then relayed to our motor control board, the STM32-F446RE.
+Live data from the ZED camera and the Nvidia Jetson Nano is transmitted to the Raspberry Pi via Ethernet. The Raspberry Pi is crucial for processing LIDAR data, which is vital for real-time obstacle avoidance. It also runs navigation algorithms, including A\* and the Dynamic Window Approach, to determine optimal navigation commands. These commands are then relayed to our motor control board, the STM32-F446RE.
 
 Additionally, we utilize SMACH as our task manager, which communicates with our server through Wi-Fi.
 
@@ -76,7 +77,7 @@ Additionally, we utilize SMACH as our task manager, which communicates with our 
 
 When two Autonomous Mobile Robots (AMRs) are combined to transport a load towards a common goal, significant software modifications are required. In our non-homogeneous multi-robot system, one AMR is designated as the 'leader', while the other acts as the 'follower'. The leader AMR is responsible for receiving sensor data from the follower and must consolidate this information to calculate navigation commands for both vehicles, ensuring safety and seamless cooperation. In this setup, the leader AMR functions as the front wheels, while the follower AMR acts as the rear wheels.
 
-We also developed an shelf detection algorithm that localize load shelf's four corners using laser scans. This allows us to determine the relatively angle between load shelf and AMRs, which is an important information for our controller. 
+We also developed an shelf detection algorithm that localize load shelf's four corners using laser scans. This allows us to determine the relatively angle between load shelf and AMRs, which is an important information for our controller.
 
 Communication between the two AMRs is facilitated by MQTT and Wi-Fi. For navigation, we moved away from the standard DWA local planner and developed our own custom RAP local planner, tailored to this unique configuration. Notably, the follower AMR no longer requires its own navigation algorithm; it simply responds to the commands transmitted from the leader, controlling its motors accordingly.
 
@@ -158,7 +159,8 @@ We don't need to detect all eight corner to localize the entire shaft accurately
     </div>
 </div>
 
-## Conclusion 
+## Conclusion
+
 In conclusion, our experience demonstrates the feasibility of using a multi-agent AMR system to maneuver heavy loads. Specifically, we have proposed an innovative multi-agent combining mechanism. This mechanism allows multiple robots to join together under a load shaft and navigate cohesively as a unified entity. Our work showcases the potential of collaborative robotics in industrial settings, offering a novel approach to handling substantial loads efficiently.
 
 <div class="text-center">

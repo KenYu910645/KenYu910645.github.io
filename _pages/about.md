@@ -15,8 +15,9 @@ profile:
 news: false # true  # includes a list of news items
 latest_posts: false # true  # includes a list of the newest posts
 selected_papers: false # true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+social: true # includes social icons at the bottom of the page
 ---
+
 Ken (Jia-Quan) Yu is a software engineer at MediaTek Inc., where he develops and maintains mobile phone camera drivers and integrates AI tools to improve software team efficiency in porting and debugging. He holds a master’s degree in Communication Engineering from National Taiwan University, where he specialized in monocular 3D object detection and image segmentation, and a bachelor’s degree in Mechanical Engineering from the same institution.
 
 With three years of software development experience, Ken has worked across semiconductor, robotics, and computer vision domains. He previously contributed to a robotics startup and led a multi-robot transportation system project at National Taiwan University before joining MediaTek. These roles strengthened his expertise in computer vision, embedded systems, and automation.

@@ -59,9 +59,10 @@ Despite the holistic result of panoptic segmentation, we still believe that it's
 </div>
 
 ## Approach - Panoptic-Depthlab
+
 We start from a powerful panoptic segmentation framework known as Panoptic-DeepLab; and than, we added a new depth estimation decoder branch alongside other decoder branches for semantic segmentation and class-agnostic instance grouping. This simple adjustment allows all decoder branches to leverage the same features extracted by the encoder, enhancing the efficiency of the integration; therefore, we named our proposed network Panoptic-Depthlab
 
-During training, we use L1 loss to train the depth decoder branch and the total loss of the network is the summation of all three branches loss. 
+During training, we use L1 loss to train the depth decoder branch and the total loss of the network is the summation of all three branches loss.
 
 During inference, we map corresponding segment regions onto the predicted depth map and calculate an average depth value for each segment, assigning it as the segment's depth value.
 
@@ -83,7 +84,7 @@ During inference, we map corresponding segment regions onto the predicted depth 
     Detailed design of Panoptic-Depthlab. Mirroring the architecture of the other two branches, depth estimation branch includes the ASPP module and the upsampling decoder. Notably, all three branches uses different weights.
 </div>
 
-## Experiment 
+## Experiment
 
 Training a panoptic segmentation network from scratch is quite a challenge. To make it more manageable, we utilized pre-trained weights of Panoptic-DeepLab provided by Detectron2. This pre-train model, trained on the Cityscapes dataset with 2,975 images for 90,000 iterations, provided a solid foundation for our experiment.
 
@@ -102,7 +103,7 @@ Since Cityscapes doesn't offer ground truth for depth estimation, we need to get
     Cityscapes only provides disparity map so we convert it to depth map ground true; therefore, there is lots of null value at the image border.   
 </div>
 
-## Result 
+## Result
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -132,6 +133,7 @@ Since Cityscapes doesn't offer ground truth for depth estimation, we need to get
 </div>
 
 ## Discussion and Future work
+
 Our method, while promising, still faces several challenges and areas for improvement. Firstly, our depth estimation branch is relatively weak. This is primarily due to limited computational resources, preventing us from training the entire network from scratch. We only train the depth branch for 10K iterations, resulting in the depth estimation decoder being less trained than other parts of network. This issue sometimes leads to unreliable predicted depth values.
 
 Secondly, the Cityscapes dataset is quite small, encompassing only around 3000 images for training and validation. Furthermore, it lacks high-quality ground truth for depth maps. These limitations undoubtedly affect the accuracy of our depth estimation. In future, I wish to use other more modern and more diverse dataset.
@@ -139,4 +141,5 @@ Secondly, the Cityscapes dataset is quite small, encompassing only around 3000 i
 Finally, Panoptic-DeepLab is currently trained with separate losses for depth estimation and segmentation. In the future, we aim to integrate these into a unified task, potentially enhancing the network's performance and efficiency.
 
 ## Conclusion
+
 This project showcases the feasibility of merging two seemingly distinct tasks — depth estimation and segmentation — to enhance the ability of image recongnition algorithm. We found that utilizing the same encoded features for both tasks yields satisfactory results. Through visualization, it's evident that our idea is feasible that we can get segment result with with only single image as input. This integration marks a significant step forward in developing more sophisticated and reliable autonomous driving systems.

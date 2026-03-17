@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Game Mining Bot 
+title: Game Mining Bot
 description: An auto dragonite mining program for Monster Hunter World
 img: assets/img/preview/mhw.png
 importance: 4

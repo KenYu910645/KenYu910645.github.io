@@ -39,5 +39,4 @@ category: Course Projects
     </div>
 </div>
 
-
 WIP

@@ -8,7 +8,7 @@ category: Research
 related_publications: master_thesis
 ---
 
-<!-- hyperlink icon 
+<!-- hyperlink icon
 <div class="row" style="margin-bottom: 20px;">
     <div class="col-sm mt-3 mt-md-0 text-center">
         <div class="icon-with-text">
@@ -34,8 +34,6 @@ related_publications: master_thesis
 </div> -->
 
 ## Motivation
-
-
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -75,7 +73,7 @@ related_publications: master_thesis
     
 </div>
 
-## Result 
+## Result
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
