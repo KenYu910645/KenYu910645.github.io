@@ -2,7 +2,7 @@
 layout: page
 title: HoneyHubs
 description: A Pikmin platform app — manage your Pikmin squads, track your hubs, and grow your garden!
-img: assets/img/preview/honeyhubs.png
+img: assets/img/preview/honeyhubs.svg
 importance: 1
 category: Side Projects
 ---

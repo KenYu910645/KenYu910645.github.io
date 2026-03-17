@@ -66,8 +66,43 @@ layout: default
 
     <!-- Social -->
     {% if page.social %}
+      {% assign cv_page = site.pages | where: "permalink", "/cv/" | first %}
+      {% assign cv_pdf_href = '/cv/' | relative_url %}
+      {% if cv_page and cv_page.cv_pdf %}
+        {% if cv_page.cv_pdf contains '://' %}
+          {% assign cv_pdf_href = cv_page.cv_pdf %}
+        {% else %}
+          {% assign cv_pdf_href = cv_page.cv_pdf | prepend: 'assets/pdf/' | relative_url %}
+        {% endif %}
+      {% endif %}
       <div class="social">
-        <div class="contact-icons">{% social_links %}</div>
+        <div class="contact-icons">
+          <a href="{{ cv_pdf_href }}" target="_blank" rel="noopener noreferrer" title="CV" aria-label="CV">
+            <i class="fa-solid fa-address-card"></i>
+          </a>
+          {% if site.github_username %}
+            <a
+              href="https://github.com/{{ site.github_username }}"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="GitHub"
+              aria-label="GitHub"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+          {% endif %}
+          {% if site.linkedin_username %}
+            <a
+              href="https://www.linkedin.com/in/{{ site.linkedin_username }}"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="LinkedIn"
+              aria-label="LinkedIn"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          {% endif %}
+        </div>
 
         <div class="contact-note">{{ site.contact_note }}</div>
       </div>
