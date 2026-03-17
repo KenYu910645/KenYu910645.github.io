@@ -10,6 +10,7 @@ nav: false
     <h1>🔒 Privacy Policy</h1>
     <p class="lead">HoneyHub App</p>
     <p><small>Last updated: March 18, 2026</small></p>
+    <p><small><a href="/honeyhubs/privacy/zh-tw/">繁體中文版本</a></small></p>
 </div>
 
 ---
