@@ -8,9 +8,6 @@ profile:
   align: right # right
   image: KenYu.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p> 8F., No. 2, Ln. 305, Jianguo Rd.</p>
-    <p> Taoyuan 330049, Taiwan</p>
 
 news: false # true  # includes a list of news items
 latest_posts: false # true  # includes a list of the newest posts

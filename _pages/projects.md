@@ -5,7 +5,7 @@ permalink: /projects/
 description:
 nav: true
 nav_order: 2
-display_categories: [Research, Robotics, Courses Projects, Side Projects]
+display_categories: [Research, Robotics, Course Projects, Side Projects]
 horizontal: true # false # false
 ---
 
