@@ -1,10 +1,11 @@
 ---
 layout: page
 title: Luggage Carrying Robot
-description: Autonomous Mobile Vehicle
+description: Ken Yu's autonomous luggage-carrying robot for hotel delivery, localization, obstacle avoidance, and elevator-aware navigation.
 img: assets/img/preview/amr.png
 importance: 3
 category: Robotics
+keywords: Ken Yu autonomous mobile robot, luggage carrying robot, hotel robot, robot localization, robot navigation
 ---
 
 <!-- hyperlink icon  -->
@@ -18,6 +19,12 @@ category: Robotics
         </div>
     </div>
 </div>
+
+## Summary
+
+This autonomous mobile robot project by Ken Yu was built for hotel luggage delivery. The robot localizes itself across an eight-floor environment, navigates around guests and obstacles, and integrates with elevator infrastructure to reach guest rooms safely and autonomously.
+
+**Tech stack:** ROS, 2D LiDAR, AprilTags, AMCL, A* path planning, DWA local planning, full-state control, elevator integration.
 
 <!-- youtube  -->
 <div class="row justify-content-sm-center">
@@ -116,3 +123,16 @@ For the global planner, we employ an A\* algorithm, akin to Dijkstra's but with 
         {% include figure.html path="assets/img/project_amr/dijkstra_room.gif" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
+
+## Key Results
+
+- Deployed autonomous luggage transportation workflows in hotel environments.
+- Combined LiDAR-based localization with AprilTag landmarks for stronger robustness in long corridors.
+- Used layered planning and control for both corridor navigation and precise elevator maneuvers.
+- Built the foundation for related robotics systems including elevator control and multi-robot transport.
+
+## Related Work
+
+- [Elevator Control System](/projects/project_elevator/) for floor-to-floor mobility.
+- [Multi-robot Collaboration](/projects/project_multirobot/) for cooperative transport in industrial settings.
+- [CV](/cv/) for Ken Yu's professional and academic robotics background.

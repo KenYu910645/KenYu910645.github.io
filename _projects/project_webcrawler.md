@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Auto Hospital Appointment
-description: A webcrawler for hosptical auto appointment
+description: Ken Yu's hospital appointment web crawler automates repetitive booking steps for healthcare scheduling workflows.
 img: assets/img/preview/webcrawler.png
 importance: 4
 category: Side Projects

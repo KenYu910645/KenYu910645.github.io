@@ -1,10 +1,11 @@
 ---
 layout: page
 title: Elevator Control System
-description: let robot control elevator
+description: Ken Yu's elevator control system enables autonomous robots to call elevators, press buttons, and move between floors in real buildings.
 img: assets/img/preview/elevator_well.jpg
 importance: 4
 category: Robotics
+keywords: Ken Yu elevator control system, robot elevator integration, autonomous robot infrastructure, robotics project, hotel robot
 ---
 
 <!-- hyperlink icon  -->
@@ -18,6 +19,12 @@ category: Robotics
         </div>
     </div>
 </div>
+
+## Summary
+
+This robotics infrastructure project by Ken Yu enables autonomous mobile robots to use elevators safely in hotels and similar buildings. The system combines an elevator server, a button control board, and wireless communication so robots can call elevators, select floors, and avoid entering crowded cabins.
+
+**Tech stack:** embedded control board, wireless communication over Bluetooth and Wi-Fi, robot-elevator gateway software, occupancy-aware elevator logic.
 
 <!-- elevator gif  -->
 <div class="row">
@@ -85,3 +92,16 @@ The first hardware is a button control board installed within the elevator. This
 <div class="caption">
     When the AMR enters a crowded elevator, it may lead to complaints from hotel guests.
 </div>
+
+## Key Results
+
+- Allowed service robots to travel across multiple floors without modifying the original elevator control system.
+- Added wireless command delivery between robots and the elevator gateway.
+- Built button-state detection and actuation hardware for real elevator panels.
+- Improved operational safety by detecting crowded elevator conditions before entry.
+
+## Related Work
+
+- [Luggage Carrying Robot](/projects/project_amr/) for autonomous hotel navigation.
+- [Multi-robot Collaboration](/projects/project_multirobot/) for larger-scale robotics coordination.
+- [CV](/cv/) for a broader summary of Ken Yu's robotics experience.

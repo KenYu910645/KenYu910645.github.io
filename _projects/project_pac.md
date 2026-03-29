@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Perspective-aware Convolution
-description: Monocular 3D Object Detection
+description: Ken Yu's perspective-aware convolution project improves monocular 3D object detection for autonomous driving.
 img: assets/img/preview/pac_project.jpg
 importance: 2
 category: Research

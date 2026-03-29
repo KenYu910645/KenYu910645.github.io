@@ -2,11 +2,13 @@
 layout: page
 title: Projects
 permalink: /projects/
-description:
+description: Projects by Ken Yu spanning computer vision, robotics, embedded systems, automation, and AI applications in real-world products.
+keywords: Ken Yu projects, Jia-Quan Yu projects, robotics projects, computer vision projects, AI portfolio, embedded systems portfolio
 nav: true
 nav_order: 2
 display_categories: [Research, Robotics, Course Projects, Side Projects]
 horizontal: true # false # false
+og_image: /assets/img/KenYu.jpg
 ---
 
 <!-- pages/projects.md -->

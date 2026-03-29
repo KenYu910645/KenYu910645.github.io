@@ -1,10 +1,11 @@
 ---
 layout: page
 title: Multi-robot Collaboration
-description: Factory Autonomous Transportation System
+description: Ken Yu's factory autonomous transportation system for multi-robot collaboration, cooperative payload handling, and AMR coordination.
 img: assets/img/preview/ocmid.png
 importance: 3
 category: Robotics
+keywords: Ken Yu multi-robot collaboration, autonomous mobile robots, factory transportation system, AMR coordination, robotics project
 ---
 
 <!-- hyperlink icon  -->
@@ -18,6 +19,12 @@ category: Robotics
         </div>
     </div>
 </div>
+
+## Summary
+
+This project presents a multi-robot collaboration system built by Ken Yu for factory autonomous transportation. Two autonomous mobile robots can dock under a shared shelf, combine into a single transport unit, and move heavy payloads through industrial environments with coordinated perception, planning, and control.
+
+**Tech stack:** ROS, NVIDIA Jetson Nano, Raspberry Pi, ZED camera, 2D LiDAR, AprilTags, MQTT, Wi-Fi, A* planning, custom RAP local planner.
 
 ## Demo Video
 
@@ -108,6 +115,19 @@ The second mode is the 'Differential Mode'. In this configuration, the front and
 The third mode is the 'Rotation Mode', where the front and rear AMRs are positioned perpendicularly (at 90 degrees) relative to the entire unit. This mode is particularly useful when the combined unit needs to rotate around its center instead of moving.
 
 With the ability to switch between these three modes, our RAP controller ensures the AMR unit can navigate through various terrains and obstacles effectively.
+
+## Key Results
+
+- Enabled two AMRs to transport loads heavier than a single robot could safely handle alone.
+- Built a leader-follower control architecture that fused perception and navigation across both robots.
+- Added controller mode switching for crab motion, differential turning, and in-place rotation.
+- Demonstrated a practical multi-robot transportation workflow for factory automation.
+
+## Related Work
+
+- [Luggage Carrying Robot](/projects/project_amr/) for hotel navigation, localization, and elevator operation.
+- [Elevator Control System](/projects/project_elevator/) for robot access across multiple floors.
+- [CV](/cv/) for a broader summary of Ken Yu's robotics and software engineering experience.
 
 <div class="text-center">
     <div class="row">

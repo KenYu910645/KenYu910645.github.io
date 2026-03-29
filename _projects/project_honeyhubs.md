@@ -1,7 +1,7 @@
 ---
 layout: page
 title: HoneyHub
-description: A mobile app for Pikmin Bloom players to coordinate mushroom raids, trade postcards, and use honey as an in-app currency.
+description: Ken Yu's HoneyHub mobile app helps Pikmin Bloom players coordinate mushroom raids, trade postcards, and manage in-app honey.
 img: assets/img/preview/honeyhubs.svg
 importance: 1
 category: Side Projects

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Race Car
-description: Autonomous race car model
+description: Ken Yu's autonomous race car project applies robotics and control concepts to a self-driving miniature vehicle.
 img: assets/img/preview/racecar.png
 importance: 1
 category: Side Projects

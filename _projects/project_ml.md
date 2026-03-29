@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Machine Learning
-description: Churn Rate Analysis
+description: Ken Yu's machine learning course project analyzes churn rate patterns and predictive features in user data.
 img: assets/img/preview/html.png
 importance: 4
 category: Course Projects

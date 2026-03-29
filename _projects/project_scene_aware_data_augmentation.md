@@ -1,11 +1,12 @@
 ---
 layout: page
 title: Scene-aware Data Augmentation
-description: Copy-pasting instance to new scene
+description: Ken Yu's scene-aware data augmentation research improves training data for computer vision and autonomous driving models.
 img: assets/img/preview/scene_aware.png
 importance: 3
 category: Research
 related_publications: master_thesis
+keywords: Ken Yu scene-aware data augmentation, computer vision data augmentation, autonomous driving dataset, perception research
 ---
 
 <!-- hyperlink icon
@@ -33,6 +34,12 @@ related_publications: master_thesis
     </div>
 </div> -->
 
+## Summary
+
+This research project studies scene-aware data augmentation for computer vision. Ken Yu explored how to place copied instances into new scenes more realistically so perception models can learn from richer and more plausible synthetic training examples.
+
+**Focus areas:** data augmentation, scene understanding, instance placement, perception model training.
+
 ## Motivation
 
 <div class="row">
@@ -43,6 +50,12 @@ related_publications: master_thesis
 <div class="caption">
     
 </div>
+
+## Related Work
+
+- [Panoptic-DepthLab](/projects/project_panoptic_depthlab/) for segmentation and depth prediction.
+- [Perspective-aware Convolution](/projects/project_pac/) for monocular 3D object detection.
+- [Publications](/publications/) for related research and thesis output.
 
 ## Introduction
 

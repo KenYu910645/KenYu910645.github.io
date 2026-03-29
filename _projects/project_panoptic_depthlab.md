@@ -1,11 +1,12 @@
 ---
 layout: page
 title: Panoptic-DepthLab
-description: Combination of Panoptic Segmentation and Depth Estimation
+description: Ken Yu's Panoptic-DepthLab project combines panoptic segmentation and depth estimation for richer scene understanding in computer vision.
 img: assets/img/preview/panoptic_depthlab_project.jpg
 importance: 1
 category: Research
 related_publications: panoptic_seg
+keywords: Ken Yu Panoptic-DepthLab, panoptic segmentation, depth estimation, scene understanding, computer vision research
 ---
 
 <!-- hyperlink icon  -->
@@ -32,6 +33,12 @@ related_publications: panoptic_seg
         </div>
     </div>
 </div>
+
+## Summary
+
+Panoptic-DepthLab is a computer vision research project by Ken Yu that extends Panoptic-DeepLab with a dedicated depth estimation branch. The goal is to produce panoptic segments together with depth values, making scene understanding more useful for robotics and autonomous driving.
+
+**Tech stack:** Detectron2, Panoptic-DeepLab, PyTorch, Cityscapes, TITAN RTX GPUs, ResNet encoder, ASPP, Adam optimizer.
 
 ## Motivation
 
@@ -113,6 +120,19 @@ Since Cityscapes doesn't offer ground truth for depth estimation, we need to get
 <div class="caption">
     Background pixels and foreground objects are panoptically segmented. every segments is tagged with a category label and a number indicating its depth. Objects closer to the camera are colored red, those at a medium distance are green, and the furthest objects are depicted in blue.
 </div>
+
+## Key Results
+
+- Extended a strong panoptic segmentation baseline with a depth estimation decoder branch.
+- Trained the combined network on Cityscapes using transferred weights from Detectron2.
+- Produced segment-level depth-aware outputs for richer scene interpretation.
+- Demonstrated a practical bridge between segmentation and geometry estimation.
+
+## Related Work
+
+- [Perspective-aware Convolution](/projects/project_pac/) for monocular 3D object detection.
+- [Scene-aware Data Augmentation](/projects/project_scene_aware_data_augmentation/) for improving data diversity in perception pipelines.
+- [Publications](/publications/) for associated research output.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">

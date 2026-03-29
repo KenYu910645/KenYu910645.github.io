@@ -1,7 +1,7 @@
 ---
 layout: page
 title: MapleStory LevleUp AutoBot
-description: An auto levelup bot for MapleStory Artale
+description: Ken Yu's MapleStory Artale autobot automates repetitive gameplay tasks with scripting and computer vision techniques.
 img: assets/img/project_maplestory/cover.png
 importance: 4
 category: Side Projects

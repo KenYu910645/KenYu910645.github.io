@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Visual Effects
-description: Become a Jedi Master in 5 minutes
+description: Ken Yu's visual effects project recreates cinematic lightsaber effects with practical video editing and compositing.
 img: assets/img/preview/vfx.png
 importance: 3
 category: Course Projects

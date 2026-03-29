@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Game Mining Bot
-description: An auto dragonite mining program for Monster Hunter World
+description: Ken Yu's Monster Hunter World mining bot uses automation and computer vision techniques for gameplay assistance.
 img: assets/img/preview/mhw.png
 importance: 4
 category: Side Projects

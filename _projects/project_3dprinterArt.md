@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 3D printed Calligraphy
-description: When Chinese calligraphy meets 3D printer
+description: Ken Yu's 3D printed calligraphy project combines Chinese calligraphy, digital fabrication, and creative engineering.
 img: assets/img/printer/love.jpg
 importance: 4
 category: Side Projects
