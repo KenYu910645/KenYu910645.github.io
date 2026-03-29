@@ -414,15 +414,23 @@ bundle exec jekyll serve --host 127.0.0.1 --port 4000
 ### Required workflow for AI agents
 
 1. Read `AGENTS.md` before doing any task.
-2. If any code, config, template, content, styling, or asset affecting the site is changed, rebuild the project locally.
-3. After rebuilding, present the localhost preview URL to the user so they can inspect the result.
-4. Preferred local preview command:
+2. If any code, config, template, content, styling, or asset affecting the site is changed, run Prettier after the change to ensure the repository passes the Prettier check.
+3. Preferred formatting commands:
+
+```bash
+npx prettier . --write
+npx prettier . --check
+```
+
+4. If any code, config, template, content, styling, or asset affecting the site is changed, rebuild the project locally.
+5. After rebuilding, present the localhost preview URL to the user so they can inspect the result.
+6. Preferred local preview command:
 
 ```bash
 bundle exec jekyll serve --host 127.0.0.1 --port 4000
 ```
 
-5. Preferred preview URL:
+7. Preferred preview URL:
 
 ```text
 http://127.0.0.1:4000/

@@ -24,7 +24,7 @@ keywords: Ken Yu autonomous mobile robot, luggage carrying robot, hotel robot, r
 
 This autonomous mobile robot project by Ken Yu was built for hotel luggage delivery. The robot localizes itself across an eight-floor environment, navigates around guests and obstacles, and integrates with elevator infrastructure to reach guest rooms safely and autonomously.
 
-**Tech stack:** ROS, 2D LiDAR, AprilTags, AMCL, A* path planning, DWA local planning, full-state control, elevator integration.
+**Tech stack:** ROS, 2D LiDAR, AprilTags, AMCL, A\* path planning, DWA local planning, full-state control, elevator integration.
 
 <!-- youtube  -->
 <div class="row justify-content-sm-center">

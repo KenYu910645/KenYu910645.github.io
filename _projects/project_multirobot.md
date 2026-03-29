@@ -24,7 +24,7 @@ keywords: Ken Yu multi-robot collaboration, autonomous mobile robots, factory tr
 
 This project presents a multi-robot collaboration system built by Ken Yu for factory autonomous transportation. Two autonomous mobile robots can dock under a shared shelf, combine into a single transport unit, and move heavy payloads through industrial environments with coordinated perception, planning, and control.
 
-**Tech stack:** ROS, NVIDIA Jetson Nano, Raspberry Pi, ZED camera, 2D LiDAR, AprilTags, MQTT, Wi-Fi, A* planning, custom RAP local planner.
+**Tech stack:** ROS, NVIDIA Jetson Nano, Raspberry Pi, ZED camera, 2D LiDAR, AprilTags, MQTT, Wi-Fi, A\* planning, custom RAP local planner.
 
 ## Demo Video
 

@@ -1,38 +1,17 @@
-{% assign site_title = site.title %}
-{% if site_title == "blank" %}
-  {% capture site_title %}{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}{% endcapture %}
-{% endif %}
-{% if page.url == '/blog/index.html' %}
-  {% assign meta_title = site.blog_nav_title | append: ' | ' | append: site_title %}
-{% elsif page.title != "blank" and page.url != "/" %}
-  {% if page.title == nil or page.title == "" %}
-    {% capture meta_title %}{{ page.date | date: "%Y" }} | {{ site_title }}{% endcapture %}
-  {% else %}
-    {% capture meta_title %}{{ page.title }} | {{ site_title }}{% endcapture %}
-  {% endif %}
-{% else %}
-  {% assign meta_title = site_title %}
-{% endif %}
-{% assign meta_description = page.description | default: site.description %}
-{% assign meta_keywords = page.keywords | default: site.keywords %}
-{% assign canonical_url = page.url | replace: 'index.html', '' | absolute_url %}
-{% assign og_image_path = page.og_image | default: site.og_image %}
-{% if og_image_path %}
-  {% assign meta_image = og_image_path | absolute_url %}
-{% endif %}
-{% assign is_blog_post = false %}
-{% if page.url != '/blog/index.html' and page.url contains '/blog/' %}
-  {% unless page.url contains '/tag/' or page.url contains '/category/' %}
-    {% assign is_blog_post = true %}
-  {% endunless %}
-{% endif %}
-
-{% if site.enable_google_verification or site.enable_bing_verification %}
+{% assign site_title = site.title %} {% if site_title == "blank" %} {% capture site_title %}{{ site.first_name }} {{ site.middle_name }} {{
+site.last_name }}{% endcapture %} {% endif %} {% if page.url == '/blog/index.html' %} {% assign meta_title = site.blog_nav_title | append: ' | ' |
+append: site_title %} {% elsif page.title != "blank" and page.url != "/" %} {% if page.title == nil or page.title == "" %} {% capture meta_title %}{{
+page.date | date: "%Y" }} | {{ site_title }}{% endcapture %} {% else %} {% capture meta_title %}{{ page.title }} | {{ site_title }}{% endcapture %} {%
+endif %} {% else %} {% assign meta_title = site_title %} {% endif %} {% assign meta_description = page.description | default: site.description %} {%
+assign meta_keywords = page.keywords | default: site.keywords %} {% assign canonical_url = page.url | replace: 'index.html', '' | absolute_url %} {%
+assign og_image_path = page.og_image | default: site.og_image %} {% if og_image_path %} {% assign meta_image = og_image_path | absolute_url %} {%
+endif %} {% assign is_blog_post = false %} {% if page.url != '/blog/index.html' and page.url contains '/blog/' %} {% unless page.url contains '/tag/'
+or page.url contains '/category/' %} {% assign is_blog_post = true %} {% endunless %} {% endif %} {% if site.enable_google_verification or
+site.enable_bing_verification %}
 <!-- Website verification -->
 {% if site.enable_google_verification %}
 <meta name="google-site-verification" content="{{ site.google_site_verification }}" />
-{% endif %}
-{% if site.enable_bing_verification %}
+{% endif %} {% if site.enable_bing_verification %}
 <meta name="msvalidate.01" content="{{ site.bing_site_verification }}" />
 {% endif %}
 <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
@@ -47,9 +26,7 @@
 <meta name="description" content="{{ meta_description }}" />
 {% if meta_keywords %}
 <meta name="keywords" content="{{ meta_keywords }}" />
-{% endif %}
-
-{% if site.serve_og_meta %}
+{% endif %} {% if site.serve_og_meta %}
 <!-- OpenGraph -->
 <meta property="og:site_name" content="{{ site_title }}" />
 <meta property="og:type" content="{% if is_blog_post %}article{% else %}website{% endif %}" />
@@ -67,63 +44,59 @@
 <meta name="twitter:description" content="{{ meta_description }}" />
 {% if meta_image %}
 <meta name="twitter:image" content="{{ meta_image }}" />
-{% endif %}
-{% if site.x_username %}
+{% endif %} {% if site.x_username %}
 <meta name="twitter:site" content="@{{ site.x_username }}" />
 <meta name="twitter:creator" content="@{{ site.x_username }}" />
-{% endif %}
-{% endif %}
-
-{% if site.serve_schema_org %}
+{% endif %} {% endif %} {% if site.serve_schema_org %}
 <!-- Schema.org -->
-{% assign sameaslinks = "" | split: "," %}
-{% if site.orcid_id %}{% capture link %}https://orcid.org/{{ site.orcid_id }}{% endcapture %}{% assign sameaslinks = sameaslinks | push: link %}{% endif %}
-{% if site.scholar_userid %}{% capture link %}https://scholar.google.com/citations?user={{ site.scholar_userid }}{% endcapture %}{% assign sameaslinks = sameaslinks | push: link %}{% endif %}
-{% if site.semanticscholar_id %}{% capture link %}https://www.semanticscholar.org/author/{{ site.semanticscholar_id }}{% endcapture %}{% assign sameaslinks = sameaslinks | push: link %}{% endif %}
-{% if site.github_username %}{% capture link %}https://github.com/{{ site.github_username }}{% endcapture %}{% assign sameaslinks = sameaslinks | push: link %}{% endif %}
-{% if site.linkedin_username %}{% capture link %}https://www.linkedin.com/in/{{ site.linkedin_username }}{% endcapture %}{% assign sameaslinks = sameaslinks | push: link %}{% endif %}
-{% if site.medium_username %}{% capture link %}https://medium.com/@{{ site.medium_username }}{% endcapture %}{% assign sameaslinks = sameaslinks | push: link %}{% endif %}
-{% if site.youtube_id %}{% capture link %}https://youtube.com/@{{ site.youtube_id }}{% endcapture %}{% assign sameaslinks = sameaslinks | push: link %}{% endif %}
-{% if site.work_url %}{% assign sameaslinks = sameaslinks | push: site.work_url %}{% endif %}
-{% if site.dblp_url %}{% assign sameaslinks = sameaslinks | push: site.dblp_url %}{% endif %}
+{% assign sameaslinks = "" | split: "," %} {% if site.orcid_id %}{% capture link %}https://orcid.org/{{ site.orcid_id }}{% endcapture %}{% assign
+sameaslinks = sameaslinks | push: link %}{% endif %} {% if site.scholar_userid %}{% capture link %}https://scholar.google.com/citations?user={{
+site.scholar_userid }}{% endcapture %}{% assign sameaslinks = sameaslinks | push: link %}{% endif %} {% if site.semanticscholar_id %}{% capture link
+%}https://www.semanticscholar.org/author/{{ site.semanticscholar_id }}{% endcapture %}{% assign sameaslinks = sameaslinks | push: link %}{% endif %}
+{% if site.github_username %}{% capture link %}https://github.com/{{ site.github_username }}{% endcapture %}{% assign sameaslinks = sameaslinks |
+push: link %}{% endif %} {% if site.linkedin_username %}{% capture link %}https://www.linkedin.com/in/{{ site.linkedin_username }}{% endcapture %}{%
+assign sameaslinks = sameaslinks | push: link %}{% endif %} {% if site.medium_username %}{% capture link %}https://medium.com/@{{ site.medium_username
+}}{% endcapture %}{% assign sameaslinks = sameaslinks | push: link %}{% endif %} {% if site.youtube_id %}{% capture link %}https://youtube.com/@{{
+site.youtube_id }}{% endcapture %}{% assign sameaslinks = sameaslinks | push: link %}{% endif %} {% if site.work_url %}{% assign sameaslinks =
+sameaslinks | push: site.work_url %}{% endif %} {% if site.dblp_url %}{% assign sameaslinks = sameaslinks | push: site.dblp_url %}{% endif %}
 
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WebSite",
-      "name": {{ site_title | jsonify }},
-      "url": {{ site.url | append: site.baseurl | jsonify }},
-      "description": {{ site.description | jsonify }}
-    },
-    {
-      "@type": "Person",
-      "name": "Ken (Jia-Quan) Yu",
-      "alternateName": ["Ken Yu", "Jia-Quan Yu"],
-      "url": {{ site.url | append: "/" | jsonify }},
-      "image": {{ '/assets/img/KenYu.jpg' | absolute_url | jsonify }},
-      "jobTitle": "Software Engineer",
-      "description": {{ site.description | jsonify }},
-      "worksFor": {
-        "@type": "Organization",
-        "name": "MediaTek Inc."
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": {{ site_title | jsonify }},
+        "url": {{ site.url | append: site.baseurl | jsonify }},
+        "description": {{ site.description | jsonify }}
       },
-      "alumniOf": [
-        {
-          "@type": "CollegeOrUniversity",
-          "name": "National Taiwan University"
-        }
-      ]{% if sameaslinks.size > 0 %},
-      "sameAs": {{ sameaslinks | uniq | jsonify }}{% endif %}
-    }{% if is_blog_post %},
-    {
-      "@type": "BlogPosting",
-      "headline": {{ meta_title | jsonify }},
-      "description": {{ meta_description | jsonify }},
-      "url": {{ canonical_url | jsonify }}
-    }{% endif %}
-  ]
-}
+      {
+        "@type": "Person",
+        "name": "Ken (Jia-Quan) Yu",
+        "alternateName": ["Ken Yu", "Jia-Quan Yu"],
+        "url": {{ site.url | append: "/" | jsonify }},
+        "image": {{ '/assets/img/KenYu.jpg' | absolute_url | jsonify }},
+        "jobTitle": "Software Engineer",
+        "description": {{ site.description | jsonify }},
+        "worksFor": {
+          "@type": "Organization",
+          "name": "MediaTek Inc."
+        },
+        "alumniOf": [
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "National Taiwan University"
+          }
+        ]{% if sameaslinks.size > 0 %},
+        "sameAs": {{ sameaslinks | uniq | jsonify }}{% endif %}
+      }{% if is_blog_post %},
+      {
+        "@type": "BlogPosting",
+        "headline": {{ meta_title | jsonify }},
+        "description": {{ meta_description | jsonify }},
+        "url": {{ canonical_url | jsonify }}
+      }{% endif %}
+    ]
+  }
 </script>
 {% endif %}

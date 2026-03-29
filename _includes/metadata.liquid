@@ -81,13 +81,34 @@
 {% if site.serve_schema_org %}
   <!-- Schema.org -->
   {% assign sameaslinks = '' | split: ',' %}
-  {% if site.orcid_id %}{% capture link %}https://orcid.org/{{ site.orcid_id }}{% endcapture %}{% assign sameaslinks = sameaslinks | push: link %}{% endif %}
-  {% if site.scholar_userid %}{% capture link %}https://scholar.google.com/citations?user={{ site.scholar_userid }}{% endcapture %}{% assign sameaslinks = sameaslinks | push: link %}{% endif %}
-  {% if site.semanticscholar_id %}{% capture link %}https://www.semanticscholar.org/author/{{ site.semanticscholar_id }}{% endcapture %}{% assign sameaslinks = sameaslinks | push: link %}{% endif %}
-  {% if site.github_username %}{% capture link %}https://github.com/{{ site.github_username }}{% endcapture %}{% assign sameaslinks = sameaslinks | push: link %}{% endif %}
-  {% if site.linkedin_username %}{% capture link %}https://www.linkedin.com/in/{{ site.linkedin_username }}{% endcapture %}{% assign sameaslinks = sameaslinks | push: link %}{% endif %}
-  {% if site.medium_username %}{% capture link %}https://medium.com/@{{ site.medium_username }}{% endcapture %}{% assign sameaslinks = sameaslinks | push: link %}{% endif %}
-  {% if site.youtube_id %}{% capture link %}https://youtube.com/@{{ site.youtube_id }}{% endcapture %}{% assign sameaslinks = sameaslinks | push: link %}{% endif %}
+  {% if site.orcid_id %}
+    {% capture link %}https://orcid.org/{{ site.orcid_id }}{% endcapture -%}
+    {%- assign sameaslinks = sameaslinks | push: link -%}
+  {%- endif %}
+  {% if site.scholar_userid %}
+    {% capture link %}https://scholar.google.com/citations?user={{ site.scholar_userid }}{% endcapture -%}
+    {%- assign sameaslinks = sameaslinks | push: link -%}
+  {%- endif %}
+  {% if site.semanticscholar_id %}
+    {% capture link %}https://www.semanticscholar.org/author/{{ site.semanticscholar_id }}{% endcapture -%}
+    {%- assign sameaslinks = sameaslinks | push: link -%}
+  {%- endif %}
+  {% if site.github_username %}
+    {% capture link %}https://github.com/{{ site.github_username }}{% endcapture -%}
+    {%- assign sameaslinks = sameaslinks | push: link -%}
+  {%- endif %}
+  {% if site.linkedin_username %}
+    {% capture link %}https://www.linkedin.com/in/{{ site.linkedin_username }}{% endcapture -%}
+    {%- assign sameaslinks = sameaslinks | push: link -%}
+  {%- endif %}
+  {% if site.medium_username %}
+    {% capture link %}https://medium.com/@{{ site.medium_username }}{% endcapture -%}
+    {%- assign sameaslinks = sameaslinks | push: link -%}
+  {%- endif %}
+  {% if site.youtube_id %}
+    {% capture link %}https://youtube.com/@{{ site.youtube_id }}{% endcapture -%}
+    {%- assign sameaslinks = sameaslinks | push: link -%}
+  {%- endif %}
   {% if site.work_url %}{% assign sameaslinks = sameaslinks | push: site.work_url %}{% endif %}
   {% if site.dblp_url %}{% assign sameaslinks = sameaslinks | push: site.dblp_url %}{% endif %}
 
