@@ -120,7 +120,7 @@ cronitor_analytics: # cronitor RUM analytics site ID (format: XXXXXXXXX)
 pirsch_analytics: # your Pirsch analytics site ID (length 32 characters)
 openpanel_analytics: # your Openpanel analytics client ID (format: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX)
 
-google_site_verification: # your google-site-verification ID (Google Search Console)
+google_site_verification: e0ZcMmodhkZhU2Nai_jaDPUaxg5Zo4IBi_Tlqhq4oaI # your google-site-verification ID (Google Search Console)
 bing_site_verification: # your bing-site-verification ID (Bing Webmaster)
 
 # -----------------------------------------------------------------------------
@@ -341,7 +341,7 @@ jekyll-diagrams:
 
 enable_google_analytics: false
 enable_cronitor_analytics: false
-enable_google_verification: false
+enable_google_verification: true
 enable_bing_verification: false
 enable_masonry: true
 enable_math: true
