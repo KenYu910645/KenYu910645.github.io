@@ -1,0 +1,44 @@
+---
+layout: page
+title: Projects
+permalink: /projects/
+description: Projects by Ken Yu spanning computer vision, robotics, embedded systems, automation, and AI applications in real-world products.
+keywords: Ken Yu projects, Jia-Quan Yu projects, robotics projects, computer vision projects, AI portfolio, embedded systems portfolio
+nav: true
+nav_order: 2
+display_categories: [Research, Robotics, Course Projects, Side Projects]
+horizontal: true
+og_image: /assets/img/KenYu.jpg
+---
+
+<div class="projects">
+  {% if site.enable_project_categories and page.display_categories %} {% for category in page.display_categories %} {% assign categorized_projects =
+  site.projects | where: "category", category | sort: "importance" %}
+  <section class="project-category-section">
+    <div class="container">
+      <h2 class="category">{{ category }}</h2>
+      {% if page.horizontal %}
+      <div class="row">{% for project in categorized_projects %} {% include projects_horizontal.liquid %} {% endfor %}</div>
+      {% else %}
+      <div class="grid">
+        <div class="grid-sizer"></div>
+        {% for project in categorized_projects %} {% include projects.liquid %} {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+  </section>
+  {% endfor %} {% else %} {% assign sorted_projects = site.projects | sort: "importance" %}
+  <section class="project-category-section">
+    <div class="container">
+      {% if page.horizontal %}
+      <div class="row">{% for project in sorted_projects %} {% include projects_horizontal.liquid %} {% endfor %}</div>
+      {% else %}
+      <div class="grid">
+        <div class="grid-sizer"></div>
+        {% for project in sorted_projects %} {% include projects.liquid %} {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+  </section>
+  {% endif %}
+</div>

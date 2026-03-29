@@ -1,10 +1,11 @@
 {% if project.redirect %} {% assign project_href = project.redirect %} {% else %} {% assign project_href = project.url | relative_url %} {% endif %}
 <div class="card-item col-12">
-  <!-- <div class="card hoverable"> -->
   <div class="row g-0">
     {% if project.img %}
-    <div class="card-img col-md-5">
-      <a href="{{ project_href }}"> {% include figure.html path=project.img alt="project thumbnail" class="img-fluid rounded z-depth-1" %} </a>
+    <div class="project-card-media col-md-5">
+      <a href="{{ project_href }}" class="project-thumb-link">
+        <div class="project-thumb-frame">{% include figure.html path=project.img alt="project thumbnail" class="img-fluid rounded z-depth-1" %}</div>
+      </a>
     </div>
     <div class="col-md-7">
       {% else %}
@@ -33,7 +34,6 @@
           </div>
         </div>
       </div>
-      <!-- </div> -->
     </div>
   </div>
 </div>

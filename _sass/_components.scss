@@ -125,6 +125,10 @@ ul.task-list input[type="checkbox"] {
 // Projects
 
 .projects {
+  .project-category-section {
+    margin-bottom: 2rem;
+  }
+
   a {
     text-decoration: none;
 
@@ -141,8 +145,40 @@ ul.task-list input[type="checkbox"] {
     }
   }
 
-  .col {
-    padding-bottom: 1rem;
+  .card-item {
+    width: auto;
+    margin-bottom: 10px;
+
+    .row {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .project-card-media {
+      display: block;
+
+      .project-thumb-link,
+      figure,
+      picture {
+        display: block;
+        width: 100%;
+        margin: 0;
+      }
+
+      .project-thumb-frame {
+        display: block;
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        overflow: hidden;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
   }
 
   .grid-sizer,
@@ -155,9 +191,21 @@ ul.task-list input[type="checkbox"] {
     color: var(--global-divider-color);
     border-bottom: 1px solid var(--global-divider-color);
     padding-top: 0.5rem;
-    margin-top: 2rem;
+    margin-top: 0;
     margin-bottom: 1rem;
     text-align: right;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .projects {
+    .card-item {
+      .project-card-media {
+        .project-thumb-frame {
+          aspect-ratio: 16 / 10;
+        }
+      }
+    }
   }
 }
 
