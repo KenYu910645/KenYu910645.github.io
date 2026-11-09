@@ -479,3 +479,25 @@ Workflow file: `.github/workflows/deploy.yml`.
 
 Built output is pushed to the `gh-pages` branch, which GitHub Pages serves at
 `https://KenYu910645.github.io`.
+
+## Coffee portal (2026-11-09)
+
+- `/coffee/` is a standalone Traditional Chinese landing page for 咕咕嘎嘎.
+  `coffee/index.html` is plain HTML without Jekyll front matter and is copied unchanged
+  into the build. Its stylesheet and approved artwork live in `coffee/assets/`.
+- The final line of `_pages/about.md` links to the portal with the lowercase text `coffee`.
+  Preserve the rest of the professional biography when updating this link.
+- Coffee content and original deliverables are maintained in the separate `coffee_shop`
+  project. This repository contains only the approved public website files. Never copy
+  internal research, costs, source conversations, customer data, or payment details here.
+- The page currently introduces 果果谷 (Guji, four-day anaerobic natural, medium roast)
+  and 夏奇索 (Guji, washed, medium-dark roast), with 12g drip bags and 200g whole beans.
+  Packaging images are design previews, not photographs of manufactured stock.
+- The Shopee shop is not ready. Keep the visible preparation status and no purchase link
+  until the actual shop URL and readiness have been confirmed. Do not invent availability,
+  delivery dates, shelf life, or an opening date. No checkout or payment processing is included.
+- Keep styles scoped to this standalone page and ensure it works without JavaScript.
+  Check narrow/mobile and desktop layouts, internal anchors, image loading, the homepage
+  `coffee` link, and the back link. Run Prettier on the changed files and rebuild Jekyll.
+- Deploy workflow path filters include `coffee/**` so future stylesheet-only updates
+  rebuild the portal. Coffee assets are outside the portfolio's CSS purge directory.

@@ -6,6 +6,7 @@ on:
       - master
       - main
     paths:
+      - "coffee/**"
       - "assets/**"
       - "_sass/**"
       - "_scripts/**"
@@ -35,6 +36,7 @@ on:
       - master
       - main
     paths:
+      - "coffee/**"
       - "assets/**"
       - "_sass/**"
       - "_scripts/**"

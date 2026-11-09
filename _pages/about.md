@@ -40,3 +40,5 @@ His core interests center on applying AI to real systems: computer vision for sc
 - [Publications](/publications/) and [CV](/cv/) provide a complete record of research, projects, and professional experience.
 
 Outside of work, Ken enjoys playing badminton, pickleball, and drums.
+
+[coffee](/coffee/)
