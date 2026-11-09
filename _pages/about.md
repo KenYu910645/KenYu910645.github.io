@@ -39,6 +39,4 @@ His core interests center on applying AI to real systems: computer vision for sc
 - [Elevator Control System](/projects/project_elevator/) enables service robots to travel between floors in real buildings.
 - [Publications](/publications/) and [CV](/cv/) provide a complete record of research, projects, and professional experience.
 
-Outside of work, Ken enjoys playing badminton, pickleball, and drums.
-
-[coffee](/coffee/)
+Outside of work, Ken enjoys playing badminton, pickleball, and drums and [roasting coffee](/coffee/).
