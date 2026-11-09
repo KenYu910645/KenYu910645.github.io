@@ -484,7 +484,7 @@ Built output is pushed to the `gh-pages` branch, which GitHub Pages serves at
 
 - `/coffee/` is a standalone Traditional Chinese landing page for 咕咕嘎嘎.
   `coffee/index.html` is plain HTML without Jekyll front matter and is copied unchanged
-  into the build. Its stylesheet and approved artwork live in `coffee/assets/`.
+  into the build. Its stylesheet and approved artwork live in `coffee/media/`.
 - The final line of `_pages/about.md` links to the portal with the lowercase text `coffee`.
   Preserve the rest of the professional biography when updating this link.
 - Coffee content and original deliverables are maintained in the separate `coffee_shop`
