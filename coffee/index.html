@@ -4,13 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#f6f1e7" />
-    <title>咕咕嘎嘎｜把日常，泡成喜歡的樣子。</title>
+    <title>咕咕嘎嘎｜喝杯咖啡再說。</title>
     <meta name="description" content="咕咕嘎嘎咖啡。果果谷與夏奇索，兩款衣索比亞古吉咖啡，提供濾掛與整豆熟豆。蝦皮賣場準備中，先來認識我們。" />
     <link rel="canonical" href="https://kenyu910645.github.io/coffee/" />
     <link rel="icon" type="image/png" href="./media/gugu-mark.png" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="zh_TW" />
-    <meta property="og:title" content="咕咕嘎嘎｜把日常，泡成喜歡的樣子。" />
+    <meta property="og:title" content="咕咕嘎嘎｜喝杯咖啡再說。" />
     <meta property="og:description" content="兩款咖啡，兩種喝法。濾掛與整豆熟豆，蝦皮賣場準備中。" />
     <meta property="og:url" content="https://kenyu910645.github.io/coffee/" />
     <meta property="og:image" content="https://kenyu910645.github.io/coffee/media/guoguogu-front.png" />
@@ -20,25 +20,26 @@
   <body>
     <a class="skip-link" href="#main">跳到主要內容</a>
     <header class="site-header wrap">
-      <a class="brand" href="#top" aria-label="咕咕嘎嘎，回到頁首">咕咕嘎嘎<span>咖啡的小小入口</span></a>
+      <a class="brand" href="#top" aria-label="咕咕嘎嘎，回到頁首">咕咕嘎嘎<span>濾掛咖啡 · 整豆熟豆</span></a>
       <nav aria-label="主要導覽">
         <a href="#coffee">兩款咖啡</a>
         <a href="#brew">怎麼喝</a>
-        <a href="#shop">購買資訊 <span aria-hidden="true">↗</span></a>
       </nav>
     </header>
     <main id="main">
       <section class="hero wrap" id="top" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow"><span class="little-line" aria-hidden="true"></span>濾掛咖啡 · 整豆熟豆</p>
-          <h1 id="hero-title">把日常，<br />泡成喜歡的<span class="no-wrap">樣子。</span></h1>
+          <h1 id="hero-title">咕咕嘎嘎，<br />喝杯咖啡<span class="no-wrap">再說。</span></h1>
           <p class="hero-description">忙一點，慢一點，都可以。<br />先留一杯咖啡的時間給自己。</p>
-          <a class="button" href="#coffee">認識我們的咖啡 <span aria-hidden="true">↓</span></a>
-          <p class="hero-note">咕咕嘎嘎，喝杯咖啡再說。</p>
+          <div class="hero-actions">
+            <a class="button" href="#coffee">認識我們的咖啡 <span aria-hidden="true">↓</span></a>
+            <button class="hero-shop-button" id="shop-shopee" type="button" disabled aria-label="蝦皮賣場準備中">
+              <span>蝦皮賣場</span><span class="product-shop-status">準備中</span>
+            </button>
+          </div>
         </div>
         <div class="hero-art" aria-label="咕咕嘎嘎鳥腳咖啡杯">
           <div class="sun" aria-hidden="true"></div>
-          <span class="art-note note-top">今天也慢慢喝。</span>
           <img
             class="hero-mark"
             src="./media/gugu-mark.png"
@@ -47,8 +48,6 @@
             alt="有著放空表情、長著鳥腳的咖啡杯，下方是咕咕嘎嘎原品牌字樣"
             fetchpriority="high"
           />
-          <span class="art-note note-bottom" aria-hidden="true">— —</span>
-          <span class="art-caption">一杯咖啡，一點自己的時間。</span>
         </div>
       </section>
       <div class="intro-strip">
@@ -56,11 +55,7 @@
       </div>
       <section class="coffees wrap section" id="coffee" aria-labelledby="coffee-title">
         <div class="section-heading">
-          <div>
-            <p class="eyebrow">OUR COFFEE</p>
-            <h2 id="coffee-title">先認識，<br class="mobile-break" />這兩位。</h2>
-          </div>
-          <p>同樣來自衣索比亞古吉，<br />不同的處理法與烘焙選擇。</p>
+          <h2 id="coffee-title">OUR COFFEE</h2>
         </div>
         <div class="coffee-pair">
           <article class="coffee-item">
@@ -85,6 +80,9 @@
                 </div>
               </dl>
               <p class="available-as">濾掛 12g <span aria-hidden="true">／</span> 整豆 200g</p>
+              <button class="product-shop-button" id="guoguogu-shopee" type="button" disabled aria-label="果果谷的 Shopee 商品頁準備中">
+                <span>Shopee</span><span class="product-shop-status">準備中</span>
+              </button>
             </div>
           </article>
           <article class="coffee-item">
@@ -109,17 +107,19 @@
                 </div>
               </dl>
               <p class="available-as">濾掛 12g <span aria-hidden="true">／</span> 整豆 200g</p>
+              <button class="product-shop-button" id="shakiso-shopee" type="button" disabled aria-label="夏奇索的 Shopee 商品頁準備中">
+                <span>Shopee</span><span class="product-shop-status">準備中</span>
+              </button>
             </div>
           </article>
         </div>
-        <p class="image-note">圖為包裝設計示意，商品尚未開賣。</p>
       </section>
       <section class="brew-section" id="brew" aria-labelledby="brew-title">
         <div class="wrap section">
           <div class="section-heading">
             <div>
               <p class="eyebrow">YOUR DAILY CUP</p>
-              <h2 id="brew-title">用你喜歡的方式。</h2>
+              <h2 id="brew-title">濾掛式咖啡泡法</h2>
             </div>
             <p>想簡單一點，或多一點儀式感，<br />這杯咖啡都留給你。</p>
           </div>
@@ -134,32 +134,31 @@
               />
               <p>撕開、掛好、注水。然後，喝咖啡。</p>
             </div>
-            <div class="formats">
-              <article>
-                <p class="format-kicker">想隨手沖一杯</p>
-                <h3>濾掛咖啡 <span>12g／包</span></h3>
-                <p>不用磨豆，打開就能開始。<br />讓咖啡，跟上你的日常。</p>
-              </article>
-              <article>
-                <p class="format-kicker">喜歡自己掌握節奏</p>
-                <h3>整豆熟豆 <span>200g／袋</span></h3>
-                <p>從研磨開始，慢慢沖一杯。<br />把這段時間，留給喜歡的事。</p>
-              </article>
+            <div class="brew-instructions">
+              <p class="brew-dose">一包濾掛 12g</p>
+              <p class="brew-water-label">總注水量</p>
+              <p class="brew-water">180 <span>mL</span></p>
+              <ol class="brew-steps">
+                <li>
+                  <strong>撕開，掛好。</strong>
+                  <p>撕開濾袋上緣，拉開兩側掛耳，穩穩固定在杯緣。</p>
+                </li>
+                <li>
+                  <strong>慢慢注水。</strong>
+                  <p>緩緩注入熱水，總注水量為 180 mL。</p>
+                </li>
+                <li>
+                  <strong>滴濾完成，開喝。</strong>
+                  <p>等待咖啡滴濾完成，取下濾袋，即可享用。</p>
+                </li>
+              </ol>
             </div>
           </div>
         </div>
       </section>
-      <section class="shop-section wrap section" id="shop" aria-labelledby="shop-title">
-        <p class="eyebrow">SEE YOU SOON</p>
-        <h2 id="shop-title">再來一杯，<br />這邊請。</h2>
-        <p class="shop-copy">我們正在準備蝦皮賣場。<br />準備好後，就能從這裡找到咕咕嘎嘎。</p>
-        <!-- Replace this status with the verified Shopee shop link when the store is ready. -->
-        <p class="shop-status"><span class="status-dot" aria-hidden="true"></span>蝦皮賣場準備中</p>
-        <p class="shop-note">目前尚未開放訂購，謝謝你先來逛逛。</p>
-      </section>
     </main>
     <footer class="site-footer wrap">
-      <p>咕咕嘎嘎 <span>把日常，泡成喜歡的樣子。</span></p>
+      <p>咕咕嘎嘎 <span>喝杯咖啡再說。</span></p>
       <a href="/">Ken 的個人網站 <span aria-hidden="true">↗</span></a>
     </footer>
   </body>
