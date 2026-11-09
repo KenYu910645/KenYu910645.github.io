@@ -497,6 +497,21 @@ Built output is pushed to the `gh-pages` branch, which GitHub Pages serves at
 - The Shopee shop is not ready. Keep the visible preparation status and no purchase link
   until the actual shop URL and readiness have been confirmed. Do not invent availability,
   delivery dates, shelf life, or an opening date. No checkout or payment processing is included.
+- The product section uses `OUR COFFEE` as its main heading. Each coffee has a centered,
+  disabled `Shopee / 準備中` button below its specifications. Keep both placeholders disabled
+  and without URLs until each real Shopee product URL is confirmed; then replace the matching
+  button with a link. The previous Chinese section title, side description, and image note
+  were removed at the user's request. Do not restore them automatically.
+- The brand subtitle is `濾掛咖啡 · 整豆熟豆`, and the hero heading is
+  `咕咕嘎嘎，喝杯咖啡再說。`. Keep the hero artwork free of the removed decorative captions.
+  A separate disabled `蝦皮賣場 / 準備中` button sits beside the coffee introduction link;
+  it is a shop placeholder, distinct from the two product placeholders. Do not add a URL
+  until the actual shop destination is confirmed. All three buttons are currently disabled.
+- The brewing section is titled `濾掛式咖啡泡法`, keeps the six-panel illustration, and
+  presents preparation steps with the user-specified total water volume of `180 mL` per 12g
+  drip bag. This is website guidance, not a record of a tested batch or a packaging revision.
+  The former drip/whole-bean promotional blocks and the entire final `SEE YOU SOON` shop
+  section were removed. Keep navigation free of the removed `#shop` anchor.
 - Keep styles scoped to this standalone page and ensure it works without JavaScript.
   Check narrow/mobile and desktop layouts, internal anchors, image loading, the homepage
   `coffee` link, and the back link. Run Prettier on the changed files and rebuild Jekyll.
